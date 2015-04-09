@@ -1,6 +1,8 @@
+![](https://github.com/DevMate/DevMateKit/blob/master/DevMate-logo.png)
+
 ##What is DevMate
 
-DevMate is development and distribution platform for Mac OS X developers.
+[DevMate](devmate.com) is development and distribution platform for Mac OS X developers.
 
 DevMate Dashboard provides a full control over your application and customers, displays app usage statistics, crash reports and user feedback in real time - all from a single, elegant place.
 
@@ -14,8 +16,6 @@ DevMate Dashboard provides a full control over your application and customers, d
 
  * **Users’ feedback.** Collect and reply users’ feedback, discuss them with your team, and assign statuses to ensure that no message is left without a reply.
 
-To learn more about DevMate Dashboard you are welcome to visit [our documentation](docs.devmate.com).
-
 In order to connect your application to DevMate you are to integrate DevMateKit which provides you a set of ready-to-use tools that allows you to prepare your application for distribution:
 
 * **Activations** to protect and license your application. Create time and/or feature limited trial versions.
@@ -23,7 +23,8 @@ In order to connect your application to DevMate you are to integrate DevMateKit 
 * **Updates based on Sparkle framework.** Automatically deliver app updates right to the customer.
 
 * **Crash reporting in real time.** DevMate collects and symbolicates issue reports.
-Feedback: your customers can send feedback right from the app.
+
+* **Feedback.** Your customers can send feedback right from the app.
 
 ##Get Started
 
