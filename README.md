@@ -34,5 +34,22 @@ In order to connect your application to DevMate you are to integrate DevMateKit 
 or, alternatively, integrate it to your project using [CocoaPods](cocoapods.org). Here is the podfile:
 
 ````ruby
-<insert the podfile here>
+platform :osx, '10.7'
+pod 'DevMateKit'
 ````
+
+##Activations and Trial
+
+To manage activations and trial you need to have Kevlar library installed which is generated uniquely for each application. You can read more on it [here](http://docs.devmate.com/v1.0/docs/activations-and-trial).
+
+##Issue Reporter Setup
+
+DevMateKit allows sending crashes and exception reports that can be viewed later in [Issues Management](http://docs.devmate.com/v1.0/docs/issues-management) section of DevMate Dashboard. Moreover, you will be able to view how issues of your app are distributed by various parameters in [Issues Statistics](http://docs.devmate.com/v1.0/docs/issues-statistics) section, which will help you to detrmine the weaker places of the app.
+
+Enabling issue reporter is that easy as just adding to the `-applicationDidFinishLaunching:` method of your application delegate class the following string:
+
+````objective-c
+[DevMateKit setupIssuesController:nil reportingUnhandledIssues:YES];
+````
+
+More info of issue reporter usage you can find in the [wiki article](https://github.com/DevMate/DevMateKit/wiki/Issue-Reporter).
