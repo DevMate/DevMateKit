@@ -53,3 +53,29 @@ Enabling issue reporter is that easy as just adding to the `-applicationDidFinis
 ````
 
 More info of issue reporter usage you can find in the [wiki article](https://github.com/DevMate/DevMateKit/wiki/Issue-Reporter).
+
+## Feedback Setup
+
+To allow your users sending feedback messages you need to do the following:
+
+1. Add the following method to your application delegate class implementation:
+
+````objective-c
+- (IBAction)showFeedbackDialog:(id)sender {
+    [DevMateKit showFeedbackDialog:nil inMode:DMFeedbackDefaultMode];
+}
+````
+
+2.  Connect action method you just added with corresponding menu item or button inside your XIB files.
+
+3. Build and run your application. Send a feedback message as you defined in previous step. If everything was done correctly, your message will be displayed in [Feedback Management](http://docs.devmate.com/v1.0/docs/feedback-management) DevMate section.
+
+##Updates Setup
+
+To keep user of your app updated, do the following.
+
+1. Add **com.devmate.UpdateInstaller.xpc** component to your project. Read more [here](http://docs.devmate.com/v1.0/docs/updates#install-necessary-xpc-components) if you need help.
+
+2. Add new Object component from _'Object library'_ to your main XIB file and change its class name to `SUUpdater`.
+
+3. Build and run your application and try to update.
