@@ -58,7 +58,7 @@ More info of issue reporter usage you can find in the [wiki article](https://git
 
 To allow your users sending feedback messages you need to do the following:
 
-1. Add the following method to your application delegate class implementation:
+1\. Add the following method to your application delegate class implementation:
 
 ````objective-c
 - (IBAction)showFeedbackDialog:(id)sender {
@@ -66,9 +66,9 @@ To allow your users sending feedback messages you need to do the following:
 }
 ````
 
-2.  Connect action method you just added with corresponding menu item or button inside your XIB files.
+2\.  Connect action method you just added with corresponding menu item or button inside your XIB files.
 
-3. Build and run your application. Send a feedback message as you defined in previous step. If everything was done correctly, your message will be displayed in [Feedback Management](http://docs.devmate.com/v1.0/docs/feedback-management) DevMate section.
+3\. Build and run your application. Send a feedback message as you defined in previous step. If everything was done correctly, your message will be displayed in [Feedback Management](http://docs.devmate.com/v1.0/docs/feedback-management) DevMate section.
 
 ##Updates Setup
 
