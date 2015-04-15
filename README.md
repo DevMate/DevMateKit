@@ -2,7 +2,7 @@
 
 ##What Is DevMate
 
-[DevMate](devmate.com) is development and distribution platform for Mac OS X developers.
+[DevMate](http://devmate.com) is development and distribution platform for Mac OS X developers.
 
 DevMate Dashboard provides a full control over your application and customers, displays app usage statistics, crash reports and user feedback in real time - all from a single, elegant place.
 
@@ -31,7 +31,7 @@ In order to connect your application to DevMate you are to integrate DevMateKit 
 * Download DevMateKit
 * Follow the instructions from [wiki](https://github.com/DevMate/DevMateKit/wiki/Integrating-DevMateKit)
 
-or, alternatively, integrate it to your project using [CocoaPods](cocoapods.org). Here is the podfile:
+or, alternatively, integrate it to your project using [CocoaPods](https://cocoapods.org). Here is the podfile:
 
 ````ruby
 platform :osx, '10.7'
