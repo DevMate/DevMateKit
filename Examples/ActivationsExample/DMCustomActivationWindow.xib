@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DMActivationController">
+            <connections>
+                <outlet property="containerView" destination="4Me-nZ-9vM" id="wh3-Y1-Rnw"/>
+                <outlet property="window" destination="9c7-eB-WnV" id="4sP-85-QrC"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="9c7-eB-WnV">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="445" height="200"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="QxP-Uh-ly9">
+                <rect key="frame" x="0.0" y="0.0" width="445" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Awn-cr-Cb4">
+                        <rect key="frame" x="0.0" y="0.0" width="445" height="200"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="background" id="WJ9-rW-mno"/>
+                    </imageView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="4Me-nZ-9vM">
+                        <rect key="frame" x="0.0" y="0.0" width="445" height="200"/>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4Me-nZ-9vM" secondAttribute="trailing" id="6hS-MU-2KO"/>
+                    <constraint firstItem="4Me-nZ-9vM" firstAttribute="leading" secondItem="QxP-Uh-ly9" secondAttribute="leading" id="FWD-cZ-Asb"/>
+                    <constraint firstAttribute="trailing" secondItem="Awn-cr-Cb4" secondAttribute="trailing" id="Gba-D8-dhp"/>
+                    <constraint firstItem="Awn-cr-Cb4" firstAttribute="top" secondItem="QxP-Uh-ly9" secondAttribute="top" id="bul-jz-GrZ"/>
+                    <constraint firstAttribute="bottom" secondItem="4Me-nZ-9vM" secondAttribute="bottom" id="ez8-M3-ZTa"/>
+                    <constraint firstItem="4Me-nZ-9vM" firstAttribute="top" secondItem="QxP-Uh-ly9" secondAttribute="top" id="iOg-69-wrZ"/>
+                    <constraint firstItem="Awn-cr-Cb4" firstAttribute="leading" secondItem="QxP-Uh-ly9" secondAttribute="leading" id="tTU-97-Owp"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="446.5" y="432"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="background" width="10" height="323"/>
+    </resources>
+</document>
