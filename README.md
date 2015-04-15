@@ -1,6 +1,6 @@
 ![](https://github.com/DevMate/DevMateKit/blob/master/DevMate-logo.png)
 
-##What is DevMate
+##What Is DevMate
 
 [DevMate](devmate.com) is development and distribution platform for Mac OS X developers.
 
@@ -70,12 +70,16 @@ To allow your users sending feedback messages you need to do the following:
 
 3\. Build and run your application. Send a feedback message as you defined in previous step. If everything was done correctly, your message will be displayed in [Feedback Management](http://docs.devmate.com/v1.0/docs/feedback-management) DevMate section.
 
+You can learn more on feedback setup and configuration in [wiki article](https://github.com/DevMate/DevMateKit/wiki/Feedback).
+
 ##Updates Setup
 
 To keep user of your app updated, do the following.
 
-1. Add **com.devmate.UpdateInstaller.xpc** component to your project. Read more [here](http://docs.devmate.com/v1.0/docs/updates#install-necessary-xpc-components) if you need help.
+1. Add **com.devmate.UpdateInstaller.xpc** component to your project.
 
 2. Add new Object component from _'Object library'_ to your main XIB file and change its class name to `SUUpdater`.
 
 3. Build and run your application and try to update.
+
+Refer to [wiki article](https://github.com/DevMate/DevMateKit/wiki/Updates) if you need more help.
