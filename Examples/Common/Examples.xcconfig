@@ -1,0 +1,14 @@
+//
+//  Examples.xcconfig
+//  Examples
+//
+//  Created by Dmytro Tretiakov on 4/14/15.
+//  Copyright (c) 2015 DevMate Inc. All rights reserved.
+//
+
+INFOPLIST_FILE = Common/Info.plist
+CODE_SIGN_ENTITLEMENTS = Common/Examples.entitlements
+CODE_SIGN_IDENTITY = Mac Developer
+
+LD_RUNPATH_SEARCH_PATHS = @executable_path/../Frameworks
+FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../DevMateKit"
