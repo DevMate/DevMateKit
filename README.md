@@ -30,7 +30,16 @@ In order to connect your application to DevMate you are to integrate DevMateKit 
 
 1\.  Drag and drop **DevMateKit** folder to your project. Check the '_Copy items if needed_' in the dialogue appeared; check '_Create groups_' control for '_Added folders_' group; uncheck all items in '_Add to targets_' table.
 
-2\.  Add the framework to build phases of your project.
+2\.  Add the framework to build phases of your project:
+  1.  Select your project in the Project Navigator.
+  2.  Select your application target.
+  3.  Select the _'Build Phases'_ tab.
+  4.  Copy **DevMateKit.framework** from the Project Navigator to the '_Link Binary With Libraries_' build phase list.
+  5.  Select _'Editor' > 'Add Build Phase' > 'Add Copy Files Build Phase_' Xcode main menu item.
+  6.  Open the newly appeared _'Copy Files_' expander.
+  7.  Select '_Frameworks_' in the Destination menu.
+  8.  Copy **DevMateKit.framework** from the Project Navigator to the** '**_Copy Files_' list.
+
 
 3\.  Proceed to the '_Build Settings_' tab. Select '_All_' instead of '_Basic_' set of settings, find '_Runpath Search Paths_' in the list and add the following line if it is absent:
 
