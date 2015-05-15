@@ -65,7 +65,7 @@ You can read more on DevMateKit customization in wiki article.
 
 ###CocoaPods Integration
 
-You can integrate DevMateKit into your project using [CocoaPods](cocoapods.org). Here is the podfile:
+You can integrate DevMateKit into your project using [CocoaPods](http://cocoadocs.org/docsets/DevMateKit/1.1.1/). Here is the podfile:
 
 ````ruby
 platform :osx, '10.7'
