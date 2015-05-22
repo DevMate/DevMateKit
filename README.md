@@ -30,6 +30,12 @@ In order to connect your application to DevMate you are to integrate DevMateKit 
 
 1\.  Drag and drop **DevMateKit** folder to your project. Check the '_Copy items if needed_' in the dialogue appeared; check '_Create groups_' control for '_Added folders_' group; uncheck all items in '_Add to targets_' table.
 
+####What's Inside
+
+* `com.devmate.UpdateInstaller.xpc` — XPC service necessary for correct work of updates;
+* `DevMateIssuesReporter.framework` — an umbrella framework for correct integration of DevMateKit;
+* `DevMateKit.framework` — DevMateKit iteslf.
+
 2\.  Add the framework to build phases of your project:
   1.  Select your project in the Project Navigator.
   2.  Select your application target.
