@@ -1,4 +1,6 @@
-![](https://github.com/DevMate/DevMateKit/blob/master/DevMate-logo.png)
+<p align="center" >
+  <img src="https://github.com/DevMate/DevMateKit/blob/master/DevMate-logo.png" alt="DevMate-logo">
+</p>
 
 ##What Is DevMate
 
