@@ -58,6 +58,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/nl.lproj/Sparkle.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F9Glew0gS9l83OeLpAKWK1jZylc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/pl.lproj/Sparkle.strings</key>
 		<dict>
 			<key>hash</key>
@@ -81,6 +90,15 @@
 			<key>hash</key>
 			<data>
 			1u4/QMl6l9bF6GyrP0sunHa8Gq4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/uk.lproj/Sparkle.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7gi7Qnp58uEuShWPZ5XT2zfn0EE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -151,6 +169,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/nl.lproj/Sparkle.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F9Glew0gS9l83OeLpAKWK1jZylc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/pl.lproj/Sparkle.strings</key>
 		<dict>
 			<key>hash</key>
@@ -179,6 +206,15 @@
 			<key>hash</key>
 			<data>
 			1u4/QMl6l9bF6GyrP0sunHa8Gq4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/uk.lproj/Sparkle.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7gi7Qnp58uEuShWPZ5XT2zfn0EE=
 			</data>
 			<key>optional</key>
 			<true/>
