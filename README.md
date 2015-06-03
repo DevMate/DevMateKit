@@ -35,14 +35,13 @@ In order to connect your application to DevMate you are to integrate DevMateKit 
 ####What's Inside
 
 * `com.devmate.UpdateInstaller.xpc` — XPC service necessary for correct work of updates;
-* `DevMateIssuesReporter.framework` — an umbrella framework for correct integration of DevMateKit;
 * `DevMateKit.framework` — DevMateKit iteslf.
 
 2\.  Add the framework to build phases of your project:
   1.  Select your project in the Project Navigator.
   2.  Select your application target.
   3.  Select the _'Build Phases'_ tab.
-  4.  Copy **DevMateKit.framework** from the Project Navigator to the '_Link Binary With Libraries_' build phase list.
+  4.  Copy **DevMateKit.framework** from the Project Navigator to the '_Link Binary With Libraries_' build phase list if it is absent.
   5.  Select _'Editor' > 'Add Build Phase' > 'Add Copy Files Build Phase_' Xcode main menu item.
   6.  Open the newly appeared _'Copy Files_' expander.
   7.  Select '_Frameworks_' in the Destination menu.
@@ -52,6 +51,18 @@ In order to connect your application to DevMate you are to integrate DevMateKit 
 3\.  Proceed to the '_Build Settings_' tab. Select '_All_' instead of '_Basic_' set of settings, find '_Runpath Search Paths_' in the list and add the following line if it is absent:
 
     @executable_path/../Frameworks
+
+4\.  Proceed to the *'Build Settings'* tab and add the following string to the *'Framework Search Paths'*:
+
+````
+"$(PROJECT_DIR)/DevMateKit/DevMateKit.framework/Frameworks"
+````
+if DevMateKit folder is located in the project root folder or
+
+````
+"$(PROJECT_DIR)/<Path_to_DevMateKit_folder>/DevMateKit.framework/Frameworks"
+````
+otherwise.
 
 ### Test Integration
 
