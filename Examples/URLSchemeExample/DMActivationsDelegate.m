@@ -62,7 +62,7 @@ static NSString *const DMURLSchemeName = @"bathyscaphe";
 
 - (BOOL)activationController:(DMActivationController *)controller shouldShowDialogForReason:(DMShowDialogReason)reason
           withAdditionalInfo:(NSDictionary *)additionalInfo proposedActivationMode:(inout DMActivationMode *)ioProposedMode
-           completionHandler:(out DMCompletionHandler *)pHandlerCopy
+     completionHandlerSetter:(void (^)(DMCompletionHandler))handlerSetter
 {
     if (reason == DMShowReasonActivateViaURLScheme)
     {

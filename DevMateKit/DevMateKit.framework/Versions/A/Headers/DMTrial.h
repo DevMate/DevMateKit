@@ -164,12 +164,12 @@ CF_EXPORT void DMTrialInvalidateTrial(DMTrialRef trial);
 
 //========================== Time trial functions ==========================//
 
-#define kDMTrialMinute   60
-#define kDMTrialHour     3600
-#define kDMTrialDay      86400
-#define kDMTrialWeek     604800      /* 7 days */
-#define kDMTrialMonth    2592000     /* 30 days */
-#define kDMTrialYear     31536000    /* 365 days */
+static const CFTimeInterval kDMTrialMinute  = 60;
+static const CFTimeInterval kDMTrialHour    = 60 * kDMTrialMinute;
+static const CFTimeInterval kDMTrialDay     = 24 * kDMTrialHour;
+static const CFTimeInterval kDMTrialWeek    = 7 * kDMTrialDay;
+static const CFTimeInterval kDMTrialMonth   = 30 * kDMTrialDay;
+static const CFTimeInterval kDMTrialYear    = 365 * kDMTrialDay;
 
 /*! @brief Function to create time trial object.
     @discussion To initialize created time trial use standard \p DMTrialInitializeTrial function.

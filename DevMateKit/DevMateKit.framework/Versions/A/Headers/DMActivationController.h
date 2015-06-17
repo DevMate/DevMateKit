@@ -285,11 +285,18 @@ typedef void (^DMCompletionHandler)(DMActivationProcessResult result);
  *  @param reason           Activation dialog show reason.
  *  @param additionalInfo   Additional information for show reason that can be analyzed.
  *  @param ioProposedMode   Pointer to in-out activation mode that will be used by activation controller.
- *  @param pHandlerCopy     Pointer to completion handler block that will be called at the end of activation process. It should point to the copy of original block. To copy block use \p Block_copy() function. This block copy will be released by controller later.
+ *  @param handlerSetter    Special block for setting completion handler that will be called at the end of activation process.
  */
 - (BOOL)activationController:(DMActivationController *)controller shouldShowDialogForReason:(DMShowDialogReason)reason
           withAdditionalInfo:(NSDictionary *)additionalInfo proposedActivationMode:(inout DMActivationMode *)ioProposedMode
-           completionHandler:(out DMCompletionHandler *)pHandlerCopy;
+     completionHandlerSetter:(void (^)(DMCompletionHandler))handlerSetter;
+
+/*!
+ Deprecated.
+ */
+- (BOOL)activationController:(DMActivationController *)controller shouldShowDialogForReason:(DMShowDialogReason)reason
+          withAdditionalInfo:(NSDictionary *)additionalInfo proposedActivationMode:(inout DMActivationMode *)ioProposedMode
+           completionHandler:(out DMCompletionHandler *)pHandlerCopy DM_DEPRECATED("Use -activationController:shouldShowDialogForReason:withAdditionalInfo:proposedActivationMode:completionHandlerSetter: instead");
 
 /*! @brief Returns confirmation about application termination.
     @discussion If this method is not implemented, application will be terminated.

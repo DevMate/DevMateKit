@@ -123,14 +123,13 @@
 
 - (BOOL)activationController:(DMActivationController *)controller shouldShowDialogForReason:(DMShowDialogReason)reason
           withAdditionalInfo:(NSDictionary *)additionalInfo proposedActivationMode:(inout DMActivationMode *)ioProposedMode
-           completionHandler:(out DMCompletionHandler *)pHandlerCopy
+     completionHandlerSetter:(void (^)(DMCompletionHandler))handlerSetter
 {
     *ioProposedMode = DMActivationModeSheet;
 
-    DMCompletionHandler handler = ^(DMActivationProcessResult result) {
+    handlerSetter(^(DMActivationProcessResult result) {
         [self updateUI];
-    };
-    *pHandlerCopy = (__bridge DMCompletionHandler)Block_copy((__bridge void *)handler);
+    });
 
     return YES;
 }
