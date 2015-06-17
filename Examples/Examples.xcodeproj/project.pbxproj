@@ -47,7 +47,6 @@
 		335F0A081A15E0C9001BCB49 /* DMCustomActivationWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335F0A071A15E0C9001BCB49 /* DMCustomActivationWindow.xib */; };
 		335F0A091A15E219001BCB49 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 335F097E1A152B41001BCB49 /* background.png */; };
 		335F0A0C1A15ECFB001BCB49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F09821A152B41001BCB49 /* main.m */; };
-		335F0A0D1A15ECFB001BCB49 /* DMTimeTrialDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F0A031A15DF1D001BCB49 /* DMTimeTrialDelegate.m */; };
 		335F0A101A15ECFB001BCB49 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F09FD1A15DEB9001BCB49 /* libcrypto.dylib */; };
 		335F0A111A15ECFB001BCB49 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F09FB1A15DEA4001BCB49 /* libc++.dylib */; };
 		335F0A131A15ECFB001BCB49 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
@@ -82,6 +81,14 @@
 		33AB47241A1651C200273934 /* DMActivationsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB471D1A1651C200273934 /* DMActivationsDelegate.m */; };
 		33AB47281A1651C200273934 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33AB47221A1651C200273934 /* Info.plist */; };
 		33AB47291A1651C200273934 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AB47231A1651C200273934 /* MainMenu.xib */; };
+		33B640971B2EFA6F00F5F04D /* DMSwiftKevlar.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B640961B2EFA6F00F5F04D /* DMSwiftKevlar.m */; };
+		33BD91761B28466100FA1342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BD91751B28466100FA1342 /* AppDelegate.swift */; };
+		33BD917B1B28466100FA1342 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33BD91791B28466100FA1342 /* MainMenu.xib */; };
+		33BD918F1B2848CF00FA1342 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
+		33BD91911B2848E100FA1342 /* DevMateKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33BD91931B2848F500FA1342 /* com.devmate.UpdateInstaller.xpc in Copy XPC Services */ = {isa = PBXBuildFile; fileRef = 335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33BD91951B286C9300FA1342 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F09FD1A15DEB9001BCB49 /* libcrypto.dylib */; };
+		33BD91961B286C9600FA1342 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F09FB1A15DEA4001BCB49 /* libc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +213,28 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33BD91901B2848D800FA1342 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33BD91911B2848E100FA1342 /* DevMateKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33BD91921B2848E800FA1342 /* Copy XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				33BD91931B2848F500FA1342 /* com.devmate.UpdateInstaller.xpc in Copy XPC Services */,
+			);
+			name = "Copy XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -269,6 +298,13 @@
 		33AB471D1A1651C200273934 /* DMActivationsDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DMActivationsDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		33AB47221A1651C200273934 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33AB47231A1651C200273934 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		33B640951B2EFA6F00F5F04D /* DMSwiftKevlar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMSwiftKevlar.h; sourceTree = "<group>"; };
+		33B640961B2EFA6F00F5F04D /* DMSwiftKevlar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMSwiftKevlar.m; sourceTree = "<group>"; };
+		33BD91711B28466100FA1342 /* SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33BD91751B28466100FA1342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33BD917A1B28466100FA1342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		33BD918E1B28487600FA1342 /* DevMateKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevMateKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		33BD91941B284A3B00FA1342 /* Swift.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Swift.xcconfig; sourceTree = "<group>"; };
 		33D9FE1A1ADD803D002A433B /* Examples.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Examples.xcconfig; sourceTree = "<group>"; };
 		33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TrialAndActivation.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -365,6 +401,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33BD916E1B28466100FA1342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33BD918F1B2848CF00FA1342 /* DevMateKit.framework in Frameworks */,
+				33BD91951B286C9300FA1342 /* libcrypto.dylib in Frameworks */,
+				33BD91961B286C9600FA1342 /* libc++.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -381,6 +427,7 @@
 				335F0A601A15FEA6001BCB49 /* ActivationsExample */,
 				33AB46D21A16333D00273934 /* EmbeddedStoreExample */,
 				33AB471B1A1651C200273934 /* URLSchemeExample */,
+				33BD91721B28466100FA1342 /* SwiftExample */,
 				33D9FE191ADD7F14002A433B /* ----------------------------- */,
 				33AB46B91A162FFD00273934 /* Frameworks */,
 				335F08C01A14BFD6001BCB49 /* Products */,
@@ -400,6 +447,7 @@
 				335F0A5E1A15FE57001BCB49 /* ActivationsExample.app */,
 				33AB46D01A1632A500273934 /* EmbeddedStoreExample.app */,
 				33AB47191A164D6400273934 /* URLSchemeExample.app */,
+				33BD91711B28466100FA1342 /* SwiftExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -557,6 +605,19 @@
 				33AB47221A1651C200273934 /* Info.plist */,
 			);
 			path = URLSchemeExample;
+			sourceTree = "<group>";
+		};
+		33BD91721B28466100FA1342 /* SwiftExample */ = {
+			isa = PBXGroup;
+			children = (
+				33BD91941B284A3B00FA1342 /* Swift.xcconfig */,
+				33BD918E1B28487600FA1342 /* DevMateKit-Bridging-Header.h */,
+				33BD91751B28466100FA1342 /* AppDelegate.swift */,
+				33BD91791B28466100FA1342 /* MainMenu.xib */,
+				33B640951B2EFA6F00F5F04D /* DMSwiftKevlar.h */,
+				33B640961B2EFA6F00F5F04D /* DMSwiftKevlar.m */,
+			);
+			path = SwiftExample;
 			sourceTree = "<group>";
 		};
 		33D9FE191ADD7F14002A433B /* ----------------------------- */ = {
@@ -762,17 +823,40 @@
 			productReference = 33AB47191A164D6400273934 /* URLSchemeExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		33BD91701B28466100FA1342 /* SwiftExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33BD91881B28466100FA1342 /* Build configuration list for PBXNativeTarget "SwiftExample" */;
+			buildPhases = (
+				33BD916D1B28466100FA1342 /* Sources */,
+				33BD916E1B28466100FA1342 /* Frameworks */,
+				33BD916F1B28466100FA1342 /* Resources */,
+				33BD91901B2848D800FA1342 /* Copy Frameworks */,
+				33BD91921B2848E800FA1342 /* Copy XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftExample;
+			productName = SwiftExample;
+			productReference = 33BD91711B28466100FA1342 /* SwiftExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		335F08B71A14BFD6001BCB49 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Dmytro Tretiakov";
 				TargetAttributes = {
 					335F092E1A14F3E5001BCB49 = {
 						CreatedOnToolsVersion = 6.1;
+					};
+					33BD91701B28466100FA1342 = {
+						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
@@ -799,6 +883,7 @@
 				335F0A4A1A15FE57001BCB49 /* ActivationsExample */,
 				33AB46BA1A1632A500273934 /* EmbeddedStoreExample */,
 				33AB47031A164D6400273934 /* URLSchemeExample */,
+				33BD91701B28466100FA1342 /* SwiftExample */,
 			);
 		};
 /* End PBXProject section */
@@ -895,6 +980,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33BD916F1B28466100FA1342 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33BD917B1B28466100FA1342 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -957,7 +1050,6 @@
 			files = (
 				335F0A261A15ED3F001BCB49 /* DMCustomTrialDelegate.m in Sources */,
 				335F0A0C1A15ECFB001BCB49 /* main.m in Sources */,
-				335F0A0D1A15ECFB001BCB49 /* DMTimeTrialDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -989,6 +1081,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33BD916D1B28466100FA1342 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33BD91761B28466100FA1342 /* AppDelegate.swift in Sources */,
+				33B640971B2EFA6F00F5F04D /* DMSwiftKevlar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -998,6 +1099,17 @@
 			targetProxy = 335F09B91A1530F9001BCB49 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33BD91791B28466100FA1342 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33BD917A1B28466100FA1342 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		335F08DA1A14BFD6001BCB49 /* Debug */ = {
@@ -1018,6 +1130,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1060,6 +1173,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1120,8 +1234,6 @@
 		335F097A1A152B1F001BCB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1129,8 +1241,6 @@
 		335F097B1A152B1F001BCB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1138,8 +1248,6 @@
 		335F099D1A152EC9001BCB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1147,8 +1255,6 @@
 		335F099E1A152EC9001BCB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1156,8 +1262,6 @@
 		335F09B51A1530C9001BCB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1165,8 +1269,6 @@
 		335F09B61A1530C9001BCB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1174,8 +1276,6 @@
 		335F09DD1A15360B001BCB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1183,8 +1283,6 @@
 		335F09DE1A15360B001BCB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1193,8 +1291,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1203,8 +1299,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1213,8 +1307,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1223,8 +1315,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1233,8 +1323,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1243,8 +1331,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1253,8 +1339,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1263,8 +1347,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1273,8 +1355,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = URLSchemeExample/Info.plist;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
@@ -1284,10 +1364,29 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = URLSchemeExample/Info.plist;
 				PRODUCT_NAME = "${TARGET_NAME}";
+			};
+			name = Release;
+		};
+		33BD91891B28466100FA1342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33BD91941B284A3B00FA1342 /* Swift.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33BD918A1B28466100FA1342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33BD91941B284A3B00FA1342 /* Swift.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -1389,6 +1488,15 @@
 			buildConfigurations = (
 				33AB47171A164D6400273934 /* Debug */,
 				33AB47181A164D6400273934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33BD91881B28466100FA1342 /* Build configuration list for PBXNativeTarget "SwiftExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33BD91891B28466100FA1342 /* Debug */,
+				33BD918A1B28466100FA1342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,12 @@
+//
+//  Swift.xcconfig
+//  Examples
+//
+//  Created by Dmytro Tretiakov on 6/10/15.
+//  Copyright (c) 2015 DevMate Inc. All rights reserved.
+//
+
+#include "../Common/TrialAndActivation.xcconfig"
+
+MACOSX_DEPLOYMENT_TARGET = 10.9
+SWIFT_OBJC_BRIDGING_HEADER = SwiftExample/DevMateKit-Bridging-Header.h
