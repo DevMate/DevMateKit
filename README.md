@@ -68,7 +68,7 @@ otherwise.
 
 ### Test Integration
 
-1\.  Add the following string to the import section of your application delegate class file or to the special bridging header of your Swift target:
+1\.  Add the following string to the import section of your application Objective-C delegate class file or to the special bridging header of your Swift target:
 
 ````objective-c
 #import <DevMateKit/DevMateKit.h>
