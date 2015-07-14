@@ -143,7 +143,7 @@ For Swift projects:
 
 ````Swift
 @IBAction func showFeedbackDialog(sender: AnyObject?)  {
-    DevMateKit.showFeedbackDialog(nil, inMode: DMFeedbackMode.DefaultMode)
+    DevMateKit.showFeedbackDialog(nil, inMode: DMFeedbackMode.IndependentMode)
 }
 ````
 
