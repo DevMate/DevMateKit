@@ -135,7 +135,7 @@ To allow your users sending feedback messages you need to do the following:
 
 ````objective-c
 - (IBAction)showFeedbackDialog:(id)sender {
-    [DevMateKit showFeedbackDialog:nil inMode:DMFeedbackDefaultMode];
+    [DevMateKit showFeedbackDialog:nil inMode:DMFeedbackIndependentMode];
 }
 ````
 
