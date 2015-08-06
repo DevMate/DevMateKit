@@ -10,7 +10,7 @@
 #import <DevMateKit/DevMateKit.h>
 #import <CustomIssuesReporterUI/DMCustomIssuesWindowController.h>
 
-#define DM_CUSTOM_ISSUES_INTEGRATION 0
+#define DM_CUSTOM_ISSUES_INTEGRATION 1
 
 @interface DMIssuesDelegate () <DMIssuesControllerDelegate>
 
