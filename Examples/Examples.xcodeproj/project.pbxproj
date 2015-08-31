@@ -89,6 +89,13 @@
 		33BD91931B2848F500FA1342 /* com.devmate.UpdateInstaller.xpc in Copy XPC Services */ = {isa = PBXBuildFile; fileRef = 335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33BD91951B286C9300FA1342 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F09FD1A15DEB9001BCB49 /* libcrypto.dylib */; };
 		33BD91961B286C9600FA1342 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F09FB1A15DEA4001BCB49 /* libc++.dylib */; };
+		33F0046F1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F0046E1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m */; };
+		33F004761B94533B00D86DE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F004741B94533B00D86DE6 /* MainMenu.xib */; };
+		33F004891B9453FF00D86DE6 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
+		33F0048B1B94541200D86DE6 /* DevMateKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33F0048C1B94552000D86DE6 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F09FD1A15DEB9001BCB49 /* libcrypto.dylib */; };
+		33F0048D1B94552300D86DE6 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F09FB1A15DEA4001BCB49 /* libc++.dylib */; };
+		33F0048E1B94553000D86DE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F09821A152B41001BCB49 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +242,17 @@
 			name = "Copy XPC Services";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33F0048A1B94540700D86DE6 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33F0048B1B94541200D86DE6 /* DevMateKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -307,6 +325,11 @@
 		33BD91941B284A3B00FA1342 /* Swift.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Swift.xcconfig; sourceTree = "<group>"; };
 		33D9FE1A1ADD803D002A433B /* Examples.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Examples.xcconfig; sourceTree = "<group>"; };
 		33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TrialAndActivation.xcconfig; sourceTree = "<group>"; };
+		33F004691B94533B00D86DE6 /* CustomTimeTrialExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTimeTrialExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F0046D1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMCustomTimeTrialDelegate.h; sourceTree = "<group>"; };
+		33F0046E1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMCustomTimeTrialDelegate.m; sourceTree = "<group>"; };
+		33F004751B94533B00D86DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		33F004901B94555F00D86DE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,6 +434,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33F004661B94533B00D86DE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F004891B9453FF00D86DE6 /* DevMateKit.framework in Frameworks */,
+				33F0048C1B94552000D86DE6 /* libcrypto.dylib in Frameworks */,
+				33F0048D1B94552300D86DE6 /* libc++.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -424,6 +457,7 @@
 				335F09CE1A153550001BCB49 /* UpdatesExample */,
 				335F0A011A15DF1D001BCB49 /* TimeTrialExample */,
 				335F0A201A15ED3F001BCB49 /* CustomTrialExample */,
+				33F0046A1B94533B00D86DE6 /* CustomTimeTrialExample */,
 				335F0A601A15FEA6001BCB49 /* ActivationsExample */,
 				33AB46D21A16333D00273934 /* EmbeddedStoreExample */,
 				33AB471B1A1651C200273934 /* URLSchemeExample */,
@@ -448,6 +482,7 @@
 				33AB46D01A1632A500273934 /* EmbeddedStoreExample.app */,
 				33AB47191A164D6400273934 /* URLSchemeExample.app */,
 				33BD91711B28466100FA1342 /* SwiftExample.app */,
+				33F004691B94533B00D86DE6 /* CustomTimeTrialExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -625,6 +660,16 @@
 			children = (
 			);
 			name = "-----------------------------";
+			sourceTree = "<group>";
+		};
+		33F0046A1B94533B00D86DE6 /* CustomTimeTrialExample */ = {
+			isa = PBXGroup;
+			children = (
+				33F0046D1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.h */,
+				33F0046E1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m */,
+				33F004741B94533B00D86DE6 /* MainMenu.xib */,
+			);
+			path = CustomTimeTrialExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -842,6 +887,24 @@
 			productReference = 33BD91711B28466100FA1342 /* SwiftExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		33F004681B94533B00D86DE6 /* CustomTimeTrialExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F004831B94533B00D86DE6 /* Build configuration list for PBXNativeTarget "CustomTimeTrialExample" */;
+			buildPhases = (
+				33F004651B94533B00D86DE6 /* Sources */,
+				33F004661B94533B00D86DE6 /* Frameworks */,
+				33F004671B94533B00D86DE6 /* Resources */,
+				33F0048A1B94540700D86DE6 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomTimeTrialExample;
+			productName = CustomTimeTrialExample;
+			productReference = 33F004691B94533B00D86DE6 /* CustomTimeTrialExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -857,6 +920,9 @@
 					};
 					33BD91701B28466100FA1342 = {
 						CreatedOnToolsVersion = 6.3.2;
+					};
+					33F004681B94533B00D86DE6 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -880,6 +946,7 @@
 				335F09D11A15360B001BCB49 /* UpdatesExample */,
 				335F09E41A15DD21001BCB49 /* TimeTrialExample */,
 				335F0A0A1A15ECFB001BCB49 /* CustomTrialExample */,
+				33F004681B94533B00D86DE6 /* CustomTimeTrialExample */,
 				335F0A4A1A15FE57001BCB49 /* ActivationsExample */,
 				33AB46BA1A1632A500273934 /* EmbeddedStoreExample */,
 				33AB47031A164D6400273934 /* URLSchemeExample */,
@@ -988,6 +1055,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33F004671B94533B00D86DE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F004761B94533B00D86DE6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1090,6 +1165,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33F004651B94533B00D86DE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F0048E1B94553000D86DE6 /* main.m in Sources */,
+				33F0046F1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1105,6 +1189,15 @@
 			isa = PBXVariantGroup;
 			children = (
 				33BD917A1B28466100FA1342 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		33F004741B94533B00D86DE6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33F004751B94533B00D86DE6 /* Base */,
+				33F004901B94555F00D86DE6 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1373,10 +1466,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33BD91941B284A3B00FA1342 /* Swift.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -1384,8 +1474,30 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33BD91941B284A3B00FA1342 /* Swift.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33F004841B94533B00D86DE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/Data/Projects/GitHub_DevMateKit/DevMateKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33F004851B94533B00D86DE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/Data/Projects/GitHub_DevMateKit/DevMateKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1500,6 +1612,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		33F004831B94533B00D86DE6 /* Build configuration list for PBXNativeTarget "CustomTimeTrialExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F004841B94533B00D86DE6 /* Debug */,
+				33F004851B94533B00D86DE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
