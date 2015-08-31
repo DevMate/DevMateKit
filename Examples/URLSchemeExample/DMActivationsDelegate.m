@@ -18,7 +18,7 @@ static NSString *const DMURLSchemeName = @"bathyscaphe";
 /*
  See Info.plist for all URL schemes supporteb by this app.
  For testing just type link in browser:
-    bathyscaphe://activate?key=id213613319164odr
+    bathyscaphe://activate?key=id661692763632odr
 */
 
 @interface DMActivationsDelegate () <DevMateKitDelegate>

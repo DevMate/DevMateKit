@@ -50,12 +50,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, DevMateKitDelegate
     @IBAction func activateApp(sender: AnyObject?)
     {
         // Use next keys to activate current app:
-        // id670018815249odr
-        // id700081094354odr
-        // id755295510217odr
-        // id507989082392odr
-        // id249966537626odr
-        // id525124839460odr
+        // id661692763632odr
+        // id875021488172odr
+        // id912199957389odr
+        // id447048439877odr
+        // id878451030189odr
+        // id401703394809odr
         var error: Int = DMKevlarError.TestError.rawValue
         if !_my_secret_activation_check(&error) || DMKevlarError.NoError != DMKevlarError(rawValue: error)
         {
