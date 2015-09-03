@@ -130,6 +130,12 @@ typedef void (^DMCompletionHandler)(DMActivationProcessResult result);
 */
 + (instancetype)defaultController;
 
+/*! @brief Method for setting shared delegate object for all activation/trial controllers.
+    @discussion Shared delegate object will be used in case of absence concrete controller's delegate.
+    @param delegate Shared delegate object for all activation/trial controllers.
+ */
++ (void)setDelegate:(id<DMActivationControllerDelegate>)delegate;
+
 //! Required in case of using your own activation scheme instead of Kevlar lib.
 @property (nonatomic, retain) id<DMActivator> activator;
 
