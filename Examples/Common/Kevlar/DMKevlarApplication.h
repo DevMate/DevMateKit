@@ -13,7 +13,7 @@
 #include <sys/types.h>
 #include <sys/ptrace.h>
 
-#define KEVLAR_VERSION  @"4.0.1"
+#define KEVLAR_VERSION  @"4.0.3"
 
 // -------------------------------------------------------------------------------------------------
 // SOME ADDITIONAL INLINE FUNCTIONS
@@ -26,7 +26,7 @@ NS_INLINE void DMKStopDebug(void)
 }
 
 //! CodeSign validation function that will raise an excetions in case when signature is wrong
-#define DMKCheckBundleSignatureWithURL YZCyind0BnczglK
+#define DMKCheckBundleSignatureWithURL w2Za2mznCK5bK2L
 FOUNDATION_EXTERN void DMKCheckBundleSignatureWithURL(CFURLRef bundleURL, SecCSFlags validationFlags);
 
 NS_INLINE void DMKCheckMainBundleSignature(void)
@@ -84,27 +84,27 @@ FOUNDATION_EXTERN NSString *const DMKApplicationActivationStatusDidChangeNotific
 
 
 //! Function help with running timer for advanced check
-#define DMKRunNewIntegrityCheckTimer QKXSP3p4bMy1gaB7V
+#define DMKRunNewIntegrityCheckTimer nVQJwL86MY65M7T33
 FOUNDATION_EXTERN void DMKRunNewIntegrityCheckTimer(NSUInteger num, NSTimeInterval checkFrequency);
 
 //! Checks if applicaion activated. Look for kevlar errors in \p DMKevlarErrors.h file
-#define DMKIsApplicationActivated kNWqdwWHLzNhuRno1F
+#define DMKIsApplicationActivated rCccaUiC7lLteNJqWq
 FOUNDATION_EXTERN BOOL DMKIsApplicationActivated(NSInteger *outKevlarError);
 
 //! Returns user license info
-#define DMKCopyLicenseUserInfo uLKp5Fep6U4dYMOIB0U
+#define DMKCopyLicenseUserInfo vrHLcC3JrCSrG3rpIwZ
 FOUNDATION_EXTERN CFDictionaryRef DMKCopyLicenseUserInfo(void) CF_RETURNS_RETAINED;
 
 /**
  This catogory will extend functionality of NSApplication to be complies with Kevlar concept of protection. Rigth now, some helper inteface have been declare there, because it is kind of complicated to load category.
  */
-#define com_devmate_Kevlar TNFeNKpWUX
+#define com_devmate_Kevlar ZKkL6IDP9e
 @interface NSApplication (com_devmate_Kevlar)
 
 /**
  Format of file, which have been used for store license information. Default is \p kCFPropertyListXMLFormat_v1_0.
  */
-#define licenseStorageFormat NBAzLOWlL1Z
+#define licenseStorageFormat wPGFMYGA9Dh
 @property (nonatomic) NSPropertyListFormat licenseStorageFormat DEPRECATED_MSG_ATTRIBUTE("Property is not used for storing license info anymore.");
 
 /**
@@ -116,33 +116,33 @@ FOUNDATION_EXTERN CFDictionaryRef DMKCopyLicenseUserInfo(void) CF_RETURNS_RETAIN
  
  Default: `NSApplicationSupportDirectory | NSUserDirectory | NSPreferencePanesDirectory`
  */
-#define licenseStoragePath tFYQCNPtBANX
+#define licenseStoragePath AkpfWdUcMazH
 @property (nonatomic) NSSearchPathDirectory licenseStoragePath DEPRECATED_MSG_ATTRIBUTE("Use licenseStorageLocation property instead.");
 
 /**
  License could be store in different location, this option provied information to application, where to find and where to store license. Property is bitwise mask.
  Default is DMKLicenseStorageAllMask
  */
-#define licenseStorageLocation qWHz9UXpT5tlxJ2aX
+#define licenseStorageLocation gsaLofJ7Fzx9lrv5A
 @property (nonatomic) DMKLicenseStorageLocation licenseStorageLocation;
 
 /** 
  Indicate application activation status. This option is usefull for bindings. For more security use DMKIsApplicationActivated function.
  */
-#define isActivated EFVu5S7DwBX1Bvx
+#define isActivated Fhb1e4riibnI03c
 @property (nonatomic, readonly) BOOL isActivated;
 
 /**
  Return user-friendly information about license, with out any system information. For more security use DMKCopyLicenseUserInfo function.
  */
-#define licenseUserInfo L9i87mCAjz11NU
+#define licenseUserInfo TRe9nlaJX1kcJK
 @property (nonatomic, readonly) NSDictionary *licenseUserInfo;
 
 /**
  Removes all license info on local storages and sends server request to deactivate it.
  In case, if license was invalidated, this method removes all license information
  */
-#define invalidateLicense q9PJleYl0ZJ0H
+#define invalidateLicense urLcAOCMFhSA4
 - (void)invalidateLicense;
 
 /** 
@@ -156,7 +156,7 @@ FOUNDATION_EXTERN CFDictionaryRef DMKCopyLicenseUserInfo(void) CF_RETURNS_RETAIN
  Setup public key
  @param publicKey String with public key
  */
-#define setPublicKeyWithString Y5DinGDUuNDyGLjx
+#define setPublicKeyWithString b1eHsLgybTcygFdz
 + (void)setPublicKeyWithString:(NSString *)keyString;
 
 @end
