@@ -8,7 +8,6 @@
 
 #import "DMCustomTrialDelegate.h"
 #import "DMKevlarApplication.h"
-#import "DMKevlarErrors.h"
 #import <DevMateKit/DevMateKit.h>
 
 #define DM_CUSTOM_TRIAL_INTEGRATION 0

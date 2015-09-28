@@ -8,7 +8,6 @@
 
 #import "DMActivationsDelegate.h"
 #import "DMKevlarApplication.h"
-#import "DMKevlarErrors.h"
 #import <DevMateKit/DevMateKit.h>
 
 #define DM_USE_TRIAL 1

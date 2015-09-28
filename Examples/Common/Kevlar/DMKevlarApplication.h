@@ -9,11 +9,11 @@
 #define DMKevlarApplication_h
 
 #import <Cocoa/Cocoa.h>
-#include <AvailabilityMacros.h>
-#include <sys/types.h>
-#include <sys/ptrace.h>
+#import <AvailabilityMacros.h>
+#import <sys/types.h>
+#import <sys/ptrace.h>
 
-#define KEVLAR_VERSION  @"4.0.3"
+#define KEVLAR_VERSION  @"4.1"
 
 // -------------------------------------------------------------------------------------------------
 // SOME ADDITIONAL INLINE FUNCTIONS
@@ -26,7 +26,7 @@ NS_INLINE void DMKStopDebug(void)
 }
 
 //! CodeSign validation function that will raise an excetions in case when signature is wrong
-#define DMKCheckBundleSignatureWithURL w2Za2mznCK5bK2L
+#define DMKCheckBundleSignatureWithURL tpZJ13IWMCmMrRC
 FOUNDATION_EXTERN void DMKCheckBundleSignatureWithURL(CFURLRef bundleURL, SecCSFlags validationFlags);
 
 NS_INLINE void DMKCheckMainBundleSignature(void)
@@ -43,6 +43,44 @@ NS_INLINE void DMKCheckMainBundleSignature(void)
 }
 
 // -------------------------------------------------------------------------------------------------
+
+FOUNDATION_EXTERN NSString *const DMKevlarErrorDomain;
+
+typedef NS_ENUM (NSInteger, DMKevlarError)
+{
+    DMKevlarTestError                       = NSIntegerMax, // proposed to init your var with this test code. After validation it should be changed to one of the other codes below.
+    
+    DMKevlarNoError                         = 0,
+    
+    DMKevlarGeneralError                    = -100,
+    DMKevlarActivationInProcess             = -101,
+    
+    DMKevlarEmptyProduct                    = 1,
+    DMKevlarNoSuchProduct                   = 2,
+    DMKevlarAbsentUsername                  = 3,
+    DMKevlarAbsentActivationCode            = 4,
+    DMKevlarNeedProductUpgrade              = 5,
+    DMKevlarOldKeyUsed                      = 6,
+    DMKevlarWrongActivationNumber           = 7,
+    DMKevlarKeyAlreadyActivated             = 8,
+    DMKevlarFailedToReactivate              = 9,
+    DMKevlarKeyExpired                      = 10,
+    DMKevlarInternalServerError             = 11,
+    DMKevlarKeyForOtherProduct              = 12,
+    DMKevlarReactivationKeyNotFound         = 14,
+    DMKevlarBetaOnlyKeyError                = 15,
+    DMKevlarProductVersionExpired           = 16,
+    DMKevlarServerValidationError           = 17,
+    DMKevlarProductDeactivated              = 18,
+    DMKevlarOrderWasRefunded                = 19,
+    DMKevlarSubscriptionWasCanceled         = 20,
+    DMKevlarSubscriptionChargeFailed        = 21,
+    DMKevlarSubscriptionExpired             = 22,
+    
+    DMKevlarLicenseAbsentError              = 100,
+    DMKevlarLicenseSignatureError           = 101,
+    DMKevlarLicenseValidationError          = 102,
+};
 
 typedef NS_OPTIONS(NSUInteger, DMKLicenseStorageLocation)
 {
@@ -84,65 +122,68 @@ FOUNDATION_EXTERN NSString *const DMKApplicationActivationStatusDidChangeNotific
 
 
 //! Function help with running timer for advanced check
-#define DMKRunNewIntegrityCheckTimer nVQJwL86MY65M7T33
+#define DMKRunNewIntegrityCheckTimer TwX2jeTXzatC2Jire
 FOUNDATION_EXTERN void DMKRunNewIntegrityCheckTimer(NSUInteger num, NSTimeInterval checkFrequency);
 
-//! Checks if applicaion activated. Look for kevlar errors in \p DMKevlarErrors.h file
-#define DMKIsApplicationActivated rCccaUiC7lLteNJqWq
-FOUNDATION_EXTERN BOOL DMKIsApplicationActivated(NSInteger *outKevlarError);
+//! Checks if applicaion activated
+#define DMKIsApplicationActivated TSJnqJSyufoMNMfY8O
+FOUNDATION_EXTERN BOOL DMKIsApplicationActivated(DMKevlarError *outKevlarError);
 
 //! Returns user license info
-#define DMKCopyLicenseUserInfo vrHLcC3JrCSrG3rpIwZ
+#define DMKCopyLicenseUserInfo A2tiLqEg1al2xr8iwT6
 FOUNDATION_EXTERN CFDictionaryRef DMKCopyLicenseUserInfo(void) CF_RETURNS_RETAINED;
 
+//! Forces license validation request on DevMate server
+#define DMKValidateLicense xmKFc3VDzsMYFF2XkQjk
+FOUNDATION_EXTERN void DMKValidateLicense(void (^completionHandler)(NSError *errorOrNil));
+
+//! Deactivates application and invalidates license info
+#define DMKInvalidateLicense zwsN0VXGGxoJJ8GHVCelH
+FOUNDATION_EXTERN void DMKInvalidateLicense(void);
+
 /**
- This catogory will extend functionality of NSApplication to be complies with Kevlar concept of protection. Rigth now, some helper inteface have been declare there, because it is kind of complicated to load category.
+ This category will extend functionality of NSApplication to be complies with Kevlar concept of protection.
+ Rigth now, some helper inteface have been declare there, because it is kind of complicated to load category.
  */
-#define com_devmate_Kevlar ZKkL6IDP9e
+#define com_devmate_Kevlar IPZ1EGXKHC
 @interface NSApplication (com_devmate_Kevlar)
 
 /**
- Format of file, which have been used for store license information. Default is \p kCFPropertyListXMLFormat_v1_0.
+ Deprecated. Property is not used for storing license info anymore.
  */
-#define licenseStorageFormat wPGFMYGA9Dh
+#define licenseStorageFormat FQ5D9MGci8M
 @property (nonatomic) NSPropertyListFormat licenseStorageFormat DEPRECATED_MSG_ATTRIBUTE("Property is not used for storing license info anymore.");
 
 /**
- License could be store in different location, this option provied information to application, where to find and where to store license. Property is bitwise mask that used default `NSSearchPathDirectory` options by the next scheme:
- 
- - `NSApplicationSupportDirectory` - ~/[USER]/Application Support/[APPNAME]/.license
- - `NSUserDirectory` - /Users/Shared/[APPNAME]/.license
- - `NSPreferencePanesDirectory` - use UserDefaults instead of file
- 
- Default: `NSApplicationSupportDirectory | NSUserDirectory | NSPreferencePanesDirectory`
+ Deprecated. Use licenseStorageLocation property instead.
  */
-#define licenseStoragePath AkpfWdUcMazH
+#define licenseStoragePath pwtk4Rpt3nFq
 @property (nonatomic) NSSearchPathDirectory licenseStoragePath DEPRECATED_MSG_ATTRIBUTE("Use licenseStorageLocation property instead.");
 
 /**
  License could be store in different location, this option provied information to application, where to find and where to store license. Property is bitwise mask.
  Default is DMKLicenseStorageAllMask
  */
-#define licenseStorageLocation gsaLofJ7Fzx9lrv5A
+#define licenseStorageLocation dyQomuHO0q1iVAjBw
 @property (nonatomic) DMKLicenseStorageLocation licenseStorageLocation;
 
 /** 
  Indicate application activation status. This option is usefull for bindings. For more security use DMKIsApplicationActivated function.
  */
-#define isActivated Fhb1e4riibnI03c
+#define isActivated zKecYA4vkAnpne2
 @property (nonatomic, readonly) BOOL isActivated;
 
 /**
  Return user-friendly information about license, with out any system information. For more security use DMKCopyLicenseUserInfo function.
  */
-#define licenseUserInfo TRe9nlaJX1kcJK
+#define licenseUserInfo OJYEfibxtGUckB
 @property (nonatomic, readonly) NSDictionary *licenseUserInfo;
 
 /**
  Removes all license info on local storages and sends server request to deactivate it.
  In case, if license was invalidated, this method removes all license information
  */
-#define invalidateLicense urLcAOCMFhSA4
+#define invalidateLicense usszbN8CIOLsJ
 - (void)invalidateLicense;
 
 /** 
@@ -156,7 +197,7 @@ FOUNDATION_EXTERN CFDictionaryRef DMKCopyLicenseUserInfo(void) CF_RETURNS_RETAIN
  Setup public key
  @param publicKey String with public key
  */
-#define setPublicKeyWithString b1eHsLgybTcygFdz
+#define setPublicKeyWithString KuITr68t2B8h3OMc
 + (void)setPublicKeyWithString:(NSString *)keyString;
 
 @end

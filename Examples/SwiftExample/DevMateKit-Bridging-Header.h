@@ -10,7 +10,6 @@
 #define Examples_DevMateKit_Bridging_Header_h
 
 #import "DMKevlarApplication.h"
-#import "DMKevlarErrors.h"
 #import <DevMateKit/DevMateKit.h>
 #import "DMSwiftKevlar.h"
 
