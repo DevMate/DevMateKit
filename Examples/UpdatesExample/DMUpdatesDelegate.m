@@ -9,7 +9,7 @@
 #import "DMUpdatesDelegate.h"
 #import <DevMateKit/DevMateKit.h>
 
-@interface DMUpdatesDelegate ()
+@interface DMUpdatesDelegate () <SUUpdaterDelegate>
 
 @property (weak) IBOutlet NSWindow *window;
 @property (weak) IBOutlet SUUpdater *updater;
