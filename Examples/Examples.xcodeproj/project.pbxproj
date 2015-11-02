@@ -89,6 +89,19 @@
 		33BD91931B2848F500FA1342 /* com.devmate.UpdateInstaller.xpc in Copy XPC Services */ = {isa = PBXBuildFile; fileRef = 335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33BD91951B286C9300FA1342 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F09FD1A15DEB9001BCB49 /* libcrypto.dylib */; };
 		33BD91961B286C9600FA1342 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F09FB1A15DEA4001BCB49 /* libc++.dylib */; };
+		33EC2B741BDF82D40007F6E0 /* DMMainAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EC2B731BDF82D40007F6E0 /* DMMainAppDelegate.m */; };
+		33EC2B841BDF91970007F6E0 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
+		33EC2B861BDF91AA0007F6E0 /* DevMateKit.framework in Copy Files: Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33EC2B881BDF91C90007F6E0 /* com.devmate.UpdateInstaller.xpc in Copy Files: XPCs */ = {isa = PBXBuildFile; fileRef = 335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33EC2B891BDF923B0007F6E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F09821A152B41001BCB49 /* main.m */; };
+		33EC2B8F1BDF93020007F6E0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33EC2B8E1BDF93020007F6E0 /* MainMenu.xib */; };
+		33EC2B981BDF93840007F6E0 /* DMHelperAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EC2B971BDF93840007F6E0 /* DMHelperAppDelegate.m */; };
+		33EC2B9D1BDF93840007F6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33EC2B9C1BDF93840007F6E0 /* Assets.xcassets */; };
+		33EC2BA71BDF94BC0007F6E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EC2BA61BDF94BC0007F6E0 /* main.m */; };
+		33EC2BB11BDFDD140007F6E0 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
+		33EC2BB31BDFDD220007F6E0 /* com.devmate.UpdateInstaller.xpc in Copy Files: XPCs */ = {isa = PBXBuildFile; fileRef = 335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33EC2BB51BDFDEBB0007F6E0 /* HelperExample.app in Copy Files: Helper */ = {isa = PBXBuildFile; fileRef = 33EC2B941BDF93840007F6E0 /* HelperExample.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33EC2BB71BDFEC130007F6E0 /* DevMateKit.framework in Copy Files: Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33F0046F1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F0046E1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m */; };
 		33F004761B94533B00D86DE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F004741B94533B00D86DE6 /* MainMenu.xib */; };
 		33F004891B9453FF00D86DE6 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
@@ -242,6 +255,61 @@
 			name = "Copy XPC Services";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33EC2B851BDF919E0007F6E0 /* Copy Files: Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33EC2B861BDF91AA0007F6E0 /* DevMateKit.framework in Copy Files: Frameworks */,
+			);
+			name = "Copy Files: Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EC2B871BDF91C00007F6E0 /* Copy Files: XPCs */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				33EC2B881BDF91C90007F6E0 /* com.devmate.UpdateInstaller.xpc in Copy Files: XPCs */,
+			);
+			name = "Copy Files: XPCs";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EC2BB21BDFDD1A0007F6E0 /* Copy Files: XPCs */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				33EC2BB31BDFDD220007F6E0 /* com.devmate.UpdateInstaller.xpc in Copy Files: XPCs */,
+			);
+			name = "Copy Files: XPCs";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EC2BB41BDFDEA40007F6E0 /* Copy Files: Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/MacOS;
+			dstSubfolderSpec = 1;
+			files = (
+				33EC2BB51BDFDEBB0007F6E0 /* HelperExample.app in Copy Files: Helper */,
+			);
+			name = "Copy Files: Helper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EC2BB61BDFEC070007F6E0 /* Copy Files: Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33EC2BB71BDFEC130007F6E0 /* DevMateKit.framework in Copy Files: Frameworks */,
+			);
+			name = "Copy Files: Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33F0048A1B94540700D86DE6 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -325,6 +393,16 @@
 		33BD91941B284A3B00FA1342 /* Swift.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Swift.xcconfig; sourceTree = "<group>"; };
 		33D9FE1A1ADD803D002A433B /* Examples.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Examples.xcconfig; sourceTree = "<group>"; };
 		33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TrialAndActivation.xcconfig; sourceTree = "<group>"; };
+		33EC2B701BDF82D40007F6E0 /* MainUpdaterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainUpdaterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33EC2B721BDF82D40007F6E0 /* DMMainAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMMainAppDelegate.h; sourceTree = "<group>"; };
+		33EC2B731BDF82D40007F6E0 /* DMMainAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMMainAppDelegate.m; sourceTree = "<group>"; };
+		33EC2B8E1BDF93020007F6E0 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		33EC2B941BDF93840007F6E0 /* HelperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33EC2B961BDF93840007F6E0 /* DMHelperAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMHelperAppDelegate.h; sourceTree = "<group>"; };
+		33EC2B971BDF93840007F6E0 /* DMHelperAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMHelperAppDelegate.m; sourceTree = "<group>"; };
+		33EC2B9C1BDF93840007F6E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33EC2BA11BDF93840007F6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33EC2BA61BDF94BC0007F6E0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33F004691B94533B00D86DE6 /* CustomTimeTrialExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTimeTrialExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F0046D1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMCustomTimeTrialDelegate.h; sourceTree = "<group>"; };
 		33F0046E1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMCustomTimeTrialDelegate.m; sourceTree = "<group>"; };
@@ -434,6 +512,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33EC2B6D1BDF82D40007F6E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EC2B841BDF91970007F6E0 /* DevMateKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EC2B911BDF93840007F6E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EC2BB11BDFDD140007F6E0 /* DevMateKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33F004661B94533B00D86DE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,6 +556,7 @@
 				33AB46D21A16333D00273934 /* EmbeddedStoreExample */,
 				33AB471B1A1651C200273934 /* URLSchemeExample */,
 				33BD91721B28466100FA1342 /* SwiftExample */,
+				33EC2B711BDF82D40007F6E0 /* MainUpdaterExample */,
 				33D9FE191ADD7F14002A433B /* ----------------------------- */,
 				33AB46B91A162FFD00273934 /* Frameworks */,
 				335F08C01A14BFD6001BCB49 /* Products */,
@@ -483,6 +578,8 @@
 				33AB47191A164D6400273934 /* URLSchemeExample.app */,
 				33BD91711B28466100FA1342 /* SwiftExample.app */,
 				33F004691B94533B00D86DE6 /* CustomTimeTrialExample.app */,
+				33EC2B701BDF82D40007F6E0 /* MainUpdaterExample.app */,
+				33EC2B941BDF93840007F6E0 /* HelperExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -660,6 +757,29 @@
 			children = (
 			);
 			name = "-----------------------------";
+			sourceTree = "<group>";
+		};
+		33EC2B711BDF82D40007F6E0 /* MainUpdaterExample */ = {
+			isa = PBXGroup;
+			children = (
+				33EC2B951BDF93840007F6E0 /* HelperExample */,
+				33EC2B721BDF82D40007F6E0 /* DMMainAppDelegate.h */,
+				33EC2B731BDF82D40007F6E0 /* DMMainAppDelegate.m */,
+				33EC2B8E1BDF93020007F6E0 /* MainMenu.xib */,
+			);
+			path = MainUpdaterExample;
+			sourceTree = "<group>";
+		};
+		33EC2B951BDF93840007F6E0 /* HelperExample */ = {
+			isa = PBXGroup;
+			children = (
+				33EC2BA61BDF94BC0007F6E0 /* main.m */,
+				33EC2B961BDF93840007F6E0 /* DMHelperAppDelegate.h */,
+				33EC2B971BDF93840007F6E0 /* DMHelperAppDelegate.m */,
+				33EC2B9C1BDF93840007F6E0 /* Assets.xcassets */,
+				33EC2BA11BDF93840007F6E0 /* Info.plist */,
+			);
+			path = HelperExample;
 			sourceTree = "<group>";
 		};
 		33F0046A1B94533B00D86DE6 /* CustomTimeTrialExample */ = {
@@ -887,6 +1007,45 @@
 			productReference = 33BD91711B28466100FA1342 /* SwiftExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		33EC2B6F1BDF82D40007F6E0 /* MainUpdaterExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33EC2B7E1BDF82D40007F6E0 /* Build configuration list for PBXNativeTarget "MainUpdaterExample" */;
+			buildPhases = (
+				33EC2B6C1BDF82D40007F6E0 /* Sources */,
+				33EC2B6D1BDF82D40007F6E0 /* Frameworks */,
+				33EC2B6E1BDF82D40007F6E0 /* Resources */,
+				33EC2B851BDF919E0007F6E0 /* Copy Files: Frameworks */,
+				33EC2B871BDF91C00007F6E0 /* Copy Files: XPCs */,
+				33EC2BB41BDFDEA40007F6E0 /* Copy Files: Helper */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MainUpdaterExample;
+			productName = MainUpdaterExample;
+			productReference = 33EC2B701BDF82D40007F6E0 /* MainUpdaterExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33EC2B931BDF93840007F6E0 /* HelperExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33EC2BA21BDF93840007F6E0 /* Build configuration list for PBXNativeTarget "HelperExample" */;
+			buildPhases = (
+				33EC2B901BDF93840007F6E0 /* Sources */,
+				33EC2B911BDF93840007F6E0 /* Frameworks */,
+				33EC2B921BDF93840007F6E0 /* Resources */,
+				33EC2BB21BDFDD1A0007F6E0 /* Copy Files: XPCs */,
+				33EC2BB61BDFEC070007F6E0 /* Copy Files: Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelperExample;
+			productName = HelperExample;
+			productReference = 33EC2B941BDF93840007F6E0 /* HelperExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		33F004681B94533B00D86DE6 /* CustomTimeTrialExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33F004831B94533B00D86DE6 /* Build configuration list for PBXNativeTarget "CustomTimeTrialExample" */;
@@ -911,15 +1070,28 @@
 		335F08B71A14BFD6001BCB49 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DM;
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Dmytro Tretiakov";
+				ORGANIZATIONNAME = "DevMate Inc.";
 				TargetAttributes = {
 					335F092E1A14F3E5001BCB49 = {
 						CreatedOnToolsVersion = 6.1;
 					};
 					33BD91701B28466100FA1342 = {
 						CreatedOnToolsVersion = 6.3.2;
+					};
+					33EC2B6F1BDF82D40007F6E0 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					33EC2B931BDF93840007F6E0 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = S8EX82NJP6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+						};
 					};
 					33F004681B94533B00D86DE6 = {
 						CreatedOnToolsVersion = 6.4;
@@ -951,6 +1123,8 @@
 				33AB46BA1A1632A500273934 /* EmbeddedStoreExample */,
 				33AB47031A164D6400273934 /* URLSchemeExample */,
 				33BD91701B28466100FA1342 /* SwiftExample */,
+				33EC2B6F1BDF82D40007F6E0 /* MainUpdaterExample */,
+				33EC2B931BDF93840007F6E0 /* HelperExample */,
 			);
 		};
 /* End PBXProject section */
@@ -1052,6 +1226,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				33BD917B1B28466100FA1342 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EC2B6E1BDF82D40007F6E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EC2B8F1BDF93020007F6E0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EC2B921BDF93840007F6E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EC2B9D1BDF93840007F6E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1162,6 +1352,24 @@
 			files = (
 				33BD91761B28466100FA1342 /* AppDelegate.swift in Sources */,
 				33B640971B2EFA6F00F5F04D /* DMSwiftKevlar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EC2B6C1BDF82D40007F6E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EC2B891BDF923B0007F6E0 /* main.m in Sources */,
+				33EC2B741BDF82D40007F6E0 /* DMMainAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33EC2B901BDF93840007F6E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EC2BA71BDF94BC0007F6E0 /* main.m in Sources */,
+				33EC2B981BDF93840007F6E0 /* DMHelperAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1478,6 +1686,54 @@
 			};
 			name = Release;
 		};
+		33EC2B7F1BDF82D40007F6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33EC2B801BDF82D40007F6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33EC2BA31BDF93840007F6E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HelperExample/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmate.HelperExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33EC2BA41BDF93840007F6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HelperExample/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devmate.HelperExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		33F004841B94533B00D86DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
@@ -1613,6 +1869,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		33EC2B7E1BDF82D40007F6E0 /* Build configuration list for PBXNativeTarget "MainUpdaterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33EC2B7F1BDF82D40007F6E0 /* Debug */,
+				33EC2B801BDF82D40007F6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33EC2BA21BDF93840007F6E0 /* Build configuration list for PBXNativeTarget "HelperExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33EC2BA31BDF93840007F6E0 /* Debug */,
+				33EC2BA41BDF93840007F6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		33F004831B94533B00D86DE6 /* Build configuration list for PBXNativeTarget "CustomTimeTrialExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1620,6 +1894,7 @@
 				33F004851B94533B00D86DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
