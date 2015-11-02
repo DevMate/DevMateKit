@@ -8,5 +8,5 @@
 
 #include "Examples.xcconfig"
 
-OTHER_LDFLAGS = $(inherited) -ObjC "$(PROJECT_DIR)/Common/Kevlar/libkevlar.a"
+OTHER_LDFLAGS = $(inherited) -ObjC "$(PROJECT_DIR)/Common/Kevlar/libkevlar.a" -lcrypto -lc++ -framework Security
 LIBRARY_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/Common/Kevlar"
