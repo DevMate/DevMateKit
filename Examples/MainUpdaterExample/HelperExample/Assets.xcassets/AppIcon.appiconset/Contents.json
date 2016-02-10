@@ -1,15 +1,14 @@
 {
   "images" : [
     {
-      "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "StatusBarButtonImage@2x.png",
+      "size" : "16x16",
       "scale" : "1x"
     },
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "StatusBarButtonImage@2x-1.png",
+      "filename" : "StatusBarButtonImage@2x.png",
       "scale" : "2x"
     },
     {

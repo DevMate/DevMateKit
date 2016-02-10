@@ -33,7 +33,7 @@
     DMIssuesController *issuesController = [DMIssuesController sharedController];
     issuesController.delegate = self;
     [issuesController setIssuesWindowControllerClass:[DMCustomIssuesWindowController class]];
-    [issuesController reportUnhandledProblemsIfExists];
+    [issuesController reportUnhandledIssuesIfExists:YES];
 #endif
 }
 
@@ -44,24 +44,27 @@
     NSLog(@"Application will be restarted now. Try to finish all actions to save user data if needs.");
 }
 
-- (BOOL)shouldReportExceptionProblem:(DMIssuesController *)controller
+- (BOOL)controller:(DMIssuesController *)controller shouldReportIssue:(id<DMIssue>)issue
 {
-    BOOL canShowIssueReporterDialogRightNow = NO;
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    BOOL shouldShowIssueReporterDialogRightNow = YES;
+    if (issue.type == DMIssueTypeException)
+    {
+        shouldShowIssueReporterDialogRightNow = NO;
+        
         // do some work before showing issues reporter here
         // ...
         // than try to report unhadled exception
-        [[DMIssuesController sharedController] reportUnhandledProblemsIfExists];
-    });
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[DMIssuesController sharedController] reportUnhandledIssuesIfExists:YES];
+        });
+    }
+    else
+    {
+        // In case of crash we can just forbid to show issue reporter dialog
+        // but application will be terminated anyway
+    }
     
-    return canShowIssueReporterDialogRightNow;
-}
-
-- (BOOL)shouldReportCrashProblem:(DMIssuesController *)controller
-{
-    // In case of crash we can just forbid to show issue reporter dialog
-    // but application will be terminated anyway
-    return YES;
+    return shouldShowIssueReporterDialogRightNow;
 }
 
 - (NSString *)additionalIssueInfoForController:(DMIssuesController *)controller

@@ -69,7 +69,6 @@
 		33AB470D1A164D6400273934 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
 		33AB47151A164D6400273934 /* DevMateKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33AB47241A1651C200273934 /* DMActivationsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB471D1A1651C200273934 /* DMActivationsDelegate.m */; };
-		33AB47281A1651C200273934 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33AB47221A1651C200273934 /* Info.plist */; };
 		33AB47291A1651C200273934 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AB47231A1651C200273934 /* MainMenu.xib */; };
 		33B640971B2EFA6F00F5F04D /* DMSwiftKevlar.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B640961B2EFA6F00F5F04D /* DMSwiftKevlar.m */; };
 		33BD91761B28466100FA1342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BD91751B28466100FA1342 /* AppDelegate.swift */; };
@@ -1182,7 +1181,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33AB47281A1651C200273934 /* Info.plist in Resources */,
 				33AB47291A1651C200273934 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1463,7 +1461,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1483,7 +1480,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1681,7 +1677,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = HelperExample/Info.plist;
+				INFOPLIST_FILE = MainUpdaterExample/HelperExample/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devmate.HelperExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1694,7 +1690,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = HelperExample/Info.plist;
+				INFOPLIST_FILE = MainUpdaterExample/HelperExample/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devmate.HelperExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
