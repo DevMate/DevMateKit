@@ -4,7 +4,7 @@
 
 ##What Is DevMate
 
-[DevMate](http://devmate.com) is development and distribution platform for Mac OS X developers.
+[DevMate](http://devmate.com) is development and distribution platform for OS X developers.
 
 DevMate Dashboard provides a full control over your application and customers, displays app usage statistics, crash reports and user feedback in real time - all from a single, elegant place.
 
@@ -34,7 +34,6 @@ In order to connect your application to DevMate you are to integrate DevMateKit 
 
 ####What's Inside
 
-* `com.devmate.UpdateInstaller.xpc` — XPC service necessary for correct work of updates;
 * `DevMateKit.framework` — DevMateKit iteslf.
 
 2\.  Add the framework to build phases of your project:
@@ -92,15 +91,11 @@ You can read more on DevMateKit customization in wiki article.
 
 ###CocoaPods Integration
 
-You can integrate DevMateKit into your project using [CocoaPods](http://cocoadocs.org/docsets/DevMateKit/1.1.1/). Here is the podfile:
+You can integrate DevMateKit into your project using [CocoaPods](http://cocoadocs.org/docsets/DevMateKit/). Here is the podfile:
 
 ````ruby
 platform :osx, '10.7'
 pod 'DevMateKit'
-
-post_install do |installer|
-    system("RUBY_SCRIPT='Pods/DevMateKit/copy_xpc_build_phase.rb'; if [ -f $RUBY_SCRIPT ]; then ruby $RUBY_SCRIPT '#{path}'; fi")
-end
 ````
 
 ##Activations and Trial
@@ -157,10 +152,8 @@ You can learn more on feedback setup and configuration in [wiki article](https:/
 
 To keep user of your app updated, do the following.
 
-1. Add **com.devmate.UpdateInstaller.xpc** component to your project.
-
-2. Add new Object component from _'Object library'_ to your main XIB file and change its class name to `SUUpdater`.
-3. Connect `checkForUpdates` action of the `SUUpdater` object which was created in previous step with the corresponding menu item or button inside the XIB files. 
-4. Build and run your application and try to update.
+1. Add new Object component from _'Object library'_ to your main XIB file and change its class name to `SUUpdater`.
+2. Connect `checkForUpdates` action of the `SUUpdater` object which was created in previous step with the corresponding menu item or button inside the XIB files. 
+3. Build and run your application and try to update.
 
 Refer to [wiki article](https://github.com/DevMate/DevMateKit/wiki/Updates) if you need more help.

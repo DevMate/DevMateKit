@@ -39,7 +39,6 @@
 		335F09E61A15DD21001BCB49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F09821A152B41001BCB49 /* main.m */; };
 		335F09E91A15DD21001BCB49 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
 		335F09EE1A15DD21001BCB49 /* DevMateKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		335F09FA1A15DD8F001BCB49 /* com.devmate.UpdateInstaller.xpc in Copy XPC */ = {isa = PBXBuildFile; fileRef = 335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		335F0A051A15DF1D001BCB49 /* DMTimeTrialDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F0A031A15DF1D001BCB49 /* DMTimeTrialDelegate.m */; };
 		335F0A061A15DF1D001BCB49 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335F0A041A15DF1D001BCB49 /* MainMenu.xib */; };
 		335F0A081A15E0C9001BCB49 /* DMCustomActivationWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335F0A071A15E0C9001BCB49 /* DMCustomActivationWindow.xib */; };
@@ -75,18 +74,15 @@
 		33BD917B1B28466100FA1342 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33BD91791B28466100FA1342 /* MainMenu.xib */; };
 		33BD918F1B2848CF00FA1342 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
 		33BD91911B2848E100FA1342 /* DevMateKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		33BD91931B2848F500FA1342 /* com.devmate.UpdateInstaller.xpc in Copy XPC Services */ = {isa = PBXBuildFile; fileRef = 335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33EC2B741BDF82D40007F6E0 /* DMMainAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EC2B731BDF82D40007F6E0 /* DMMainAppDelegate.m */; };
 		33EC2B841BDF91970007F6E0 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
 		33EC2B861BDF91AA0007F6E0 /* DevMateKit.framework in Copy Files: Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		33EC2B881BDF91C90007F6E0 /* com.devmate.UpdateInstaller.xpc in Copy Files: XPCs */ = {isa = PBXBuildFile; fileRef = 335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33EC2B891BDF923B0007F6E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F09821A152B41001BCB49 /* main.m */; };
 		33EC2B8F1BDF93020007F6E0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33EC2B8E1BDF93020007F6E0 /* MainMenu.xib */; };
 		33EC2B981BDF93840007F6E0 /* DMHelperAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EC2B971BDF93840007F6E0 /* DMHelperAppDelegate.m */; };
 		33EC2B9D1BDF93840007F6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33EC2B9C1BDF93840007F6E0 /* Assets.xcassets */; };
 		33EC2BA71BDF94BC0007F6E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EC2BA61BDF94BC0007F6E0 /* main.m */; };
 		33EC2BB11BDFDD140007F6E0 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
-		33EC2BB31BDFDD220007F6E0 /* com.devmate.UpdateInstaller.xpc in Copy Files: XPCs */ = {isa = PBXBuildFile; fileRef = 335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33EC2BB51BDFDEBB0007F6E0 /* HelperExample.app in Copy Files: Helper */ = {isa = PBXBuildFile; fileRef = 33EC2B941BDF93840007F6E0 /* HelperExample.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33EC2BB71BDFEC130007F6E0 /* DevMateKit.framework in Copy Files: Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33F0046F1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F0046E1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m */; };
@@ -163,17 +159,6 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		335F09F91A15DD82001BCB49 /* Copy XPC */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
-			dstSubfolderSpec = 16;
-			files = (
-				335F09FA1A15DD8F001BCB49 /* com.devmate.UpdateInstaller.xpc in Copy XPC */,
-			);
-			name = "Copy XPC";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		335F0A191A15ECFB001BCB49 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,17 +214,6 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33BD91921B2848E800FA1342 /* Copy XPC Services */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
-			dstSubfolderSpec = 16;
-			files = (
-				33BD91931B2848F500FA1342 /* com.devmate.UpdateInstaller.xpc in Copy XPC Services */,
-			);
-			name = "Copy XPC Services";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		33EC2B851BDF919E0007F6E0 /* Copy Files: Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,28 +223,6 @@
 				33EC2B861BDF91AA0007F6E0 /* DevMateKit.framework in Copy Files: Frameworks */,
 			);
 			name = "Copy Files: Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33EC2B871BDF91C00007F6E0 /* Copy Files: XPCs */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
-			dstSubfolderSpec = 16;
-			files = (
-				33EC2B881BDF91C90007F6E0 /* com.devmate.UpdateInstaller.xpc in Copy Files: XPCs */,
-			);
-			name = "Copy Files: XPCs";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33EC2BB21BDFDD1A0007F6E0 /* Copy Files: XPCs */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 7;
-			files = (
-				33EC2BB31BDFDD220007F6E0 /* com.devmate.UpdateInstaller.xpc in Copy Files: XPCs */,
-			);
-			name = "Copy Files: XPCs";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		33EC2BB41BDFDEA40007F6E0 /* Copy Files: Helper */ = {
@@ -309,7 +261,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; path = com.devmate.UpdateInstaller.xpc; sourceTree = "<group>"; };
 		335F08EA1A14C489001BCB49 /* DevMateKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DevMateKit.framework; sourceTree = "<group>"; };
 		335F092F1A14F3E5001BCB49 /* CustomIssuesReporterUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomIssuesReporterUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		335F09321A14F3E5001BCB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -555,7 +506,6 @@
 		335F08E71A14C489001BCB49 /* DevMateKit */ = {
 			isa = PBXGroup;
 			children = (
-				335F08E81A14C489001BCB49 /* com.devmate.UpdateInstaller.xpc */,
 				335F08EA1A14C489001BCB49 /* DevMateKit.framework */,
 			);
 			name = DevMateKit;
@@ -852,7 +802,6 @@
 				335F09D51A15360B001BCB49 /* Frameworks */,
 				335F09D71A15360B001BCB49 /* Resources */,
 				335F09DA1A15360B001BCB49 /* Copy Frameworks */,
-				335F09F91A15DD82001BCB49 /* Copy XPC */,
 			);
 			buildRules = (
 			);
@@ -961,7 +910,6 @@
 				33BD916E1B28466100FA1342 /* Frameworks */,
 				33BD916F1B28466100FA1342 /* Resources */,
 				33BD91901B2848D800FA1342 /* Copy Frameworks */,
-				33BD91921B2848E800FA1342 /* Copy XPC Services */,
 			);
 			buildRules = (
 			);
@@ -980,7 +928,6 @@
 				33EC2B6D1BDF82D40007F6E0 /* Frameworks */,
 				33EC2B6E1BDF82D40007F6E0 /* Resources */,
 				33EC2B851BDF919E0007F6E0 /* Copy Files: Frameworks */,
-				33EC2B871BDF91C00007F6E0 /* Copy Files: XPCs */,
 				33EC2BB41BDFDEA40007F6E0 /* Copy Files: Helper */,
 			);
 			buildRules = (
@@ -999,7 +946,6 @@
 				33EC2B901BDF93840007F6E0 /* Sources */,
 				33EC2B911BDF93840007F6E0 /* Frameworks */,
 				33EC2B921BDF93840007F6E0 /* Resources */,
-				33EC2BB21BDFDD1A0007F6E0 /* Copy Files: XPCs */,
 				33EC2BB61BDFEC070007F6E0 /* Copy Files: Frameworks */,
 			);
 			buildRules = (
