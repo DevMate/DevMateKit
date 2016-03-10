@@ -10,7 +10,7 @@
 		</data>
 		<key>Resources/Autoupdate.app/Contents/MacOS/Autoupdate</key>
 		<data>
-		ujIsr3USpUgeYL3XDcpe5V+IRYA=
+		3JqH5iu6cx55DORmicOGPAXNfno=
 		</data>
 		<key>Resources/Autoupdate.app/Contents/PkgInfo</key>
 		<data>
@@ -242,7 +242,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		iOHOAYN69SmhvpfMk0MOJhyUI3o=
+		9Lox+YLZqHFF27wbijEPsI73alo=
 		</data>
 		<key>Resources/NOTICE</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/MacOS/Problem Reporter Sandboxed</key>
 		<data>
-		/ilrHJ8MHnjy6b9JaWuQqZFvRqM=
+		uP0qbWt9Mkap0cp5r9IBWFXlqlE=
 		</data>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/PkgInfo</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>Resources/Problem Reporter.app/Contents/MacOS/Problem Reporter</key>
 		<data>
-		LEP4n/TqQYwnhuVWiGlAYUpPjIU=
+		LhoQ9PWQBPB5ClWAZ0dyipYZcm8=
 		</data>
 		<key>Resources/Problem Reporter.app/Contents/PkgInfo</key>
 		<data>
@@ -431,7 +431,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CRGb7u/sUMz+oExVl3H4fsZJitk=
+			asR868/s1iiBfSVy6CkxZcflE0s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -485,7 +485,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YrbPHqtNQMxTMt+RrJt4w8ytDbc=
+			VU01kBTjJlqLn7l+CJox6+VEfzU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -701,7 +701,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qcvT5iLJJRQ7KrEXcZvLR3xwR74=
+			s1Z1057WtNW+i/7R7ir1I2sFsg4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -809,7 +809,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HbRDCPt8+BTE5kt5YiheKPOIH58=
+			CMJCpt5cjQ4YtvbYhSL1NjZZ174=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -863,7 +863,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			08wivaHiWXTZQlur+XIFJy5mrkI=
+			7b4E9Ol1DIF+Cbk2WD2alSslOrU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -947,7 +947,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			6F1XRLWTZn+KxpnaeyHPC3V1xOc=
+			qcwu1/sA13ixLl11EtCKQBVuYyo=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.devmate.DevMateIssuesReporter" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = S8EX82NJP6</string>
@@ -1138,7 +1138,7 @@
 		</data>
 		<key>Resources/Autoupdate.app/Contents/MacOS/Autoupdate</key>
 		<data>
-		ujIsr3USpUgeYL3XDcpe5V+IRYA=
+		3JqH5iu6cx55DORmicOGPAXNfno=
 		</data>
 		<key>Resources/Autoupdate.app/Contents/PkgInfo</key>
 		<data>
@@ -1375,7 +1375,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		iOHOAYN69SmhvpfMk0MOJhyUI3o=
+		9Lox+YLZqHFF27wbijEPsI73alo=
 		</data>
 		<key>Resources/NOTICE</key>
 		<data>
@@ -1387,7 +1387,7 @@
 		</data>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/MacOS/Problem Reporter Sandboxed</key>
 		<data>
-		/ilrHJ8MHnjy6b9JaWuQqZFvRqM=
+		uP0qbWt9Mkap0cp5r9IBWFXlqlE=
 		</data>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/PkgInfo</key>
 		<data>
@@ -1407,7 +1407,7 @@
 		</data>
 		<key>Resources/Problem Reporter.app/Contents/MacOS/Problem Reporter</key>
 		<data>
-		LEP4n/TqQYwnhuVWiGlAYUpPjIU=
+		LhoQ9PWQBPB5ClWAZ0dyipYZcm8=
 		</data>
 		<key>Resources/Problem Reporter.app/Contents/PkgInfo</key>
 		<data>
@@ -1564,7 +1564,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CRGb7u/sUMz+oExVl3H4fsZJitk=
+			asR868/s1iiBfSVy6CkxZcflE0s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1618,7 +1618,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YrbPHqtNQMxTMt+RrJt4w8ytDbc=
+			VU01kBTjJlqLn7l+CJox6+VEfzU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1834,7 +1834,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qcvT5iLJJRQ7KrEXcZvLR3xwR74=
+			s1Z1057WtNW+i/7R7ir1I2sFsg4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1947,7 +1947,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HbRDCPt8+BTE5kt5YiheKPOIH58=
+			CMJCpt5cjQ4YtvbYhSL1NjZZ174=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2001,7 +2001,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			08wivaHiWXTZQlur+XIFJy5mrkI=
+			7b4E9Ol1DIF+Cbk2WD2alSslOrU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2082,7 +2082,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			8rJPL2dwNmDCKNtQDn42fSMNnHw=
+			LaEg14ImYtidzBYZCIG103kWpEM=
 			</data>
 			<key>requirement</key>
 			<string>anchor apple generic and identifier "com.devmate.UpdateInstaller" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = S8EX82NJP6)</string>
