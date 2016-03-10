@@ -13,7 +13,7 @@
 
 @interface DMTrackingDelegate () <DMTrackingReporterDelegate, DMTrackingReporterInfoProvider>
 
-@property (weak) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
 @end
 
 @implementation DMTrackingDelegate

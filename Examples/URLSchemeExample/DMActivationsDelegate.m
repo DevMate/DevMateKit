@@ -22,7 +22,7 @@ static NSString *const DMURLSchemeName = @"bathyscaphe";
 
 @interface DMActivationsDelegate () <DevMateKitDelegate>
 
-@property (weak) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
 
 @end
 

@@ -14,7 +14,7 @@
 
 @interface DMIssuesDelegate () <DMIssuesControllerDelegate>
 
-@property (weak) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
 @end
 
 @implementation DMIssuesDelegate

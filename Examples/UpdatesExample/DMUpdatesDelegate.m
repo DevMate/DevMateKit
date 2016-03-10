@@ -11,8 +11,8 @@
 
 @interface DMUpdatesDelegate () <SUUpdaterDelegate>
 
-@property (weak) IBOutlet NSWindow *window;
-@property (weak) IBOutlet SUUpdater *updater;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet SUUpdater *updater;
 
 @end
 

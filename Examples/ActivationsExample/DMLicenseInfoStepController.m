@@ -11,9 +11,9 @@
 
 @interface DMLicenseInfoStepController ()
 
-@property (weak) IBOutlet NSTextField *userName;
-@property (weak) IBOutlet NSTextField *userEmail;
-@property (weak) IBOutlet NSTextField *licenseId;
+@property (unsafe_unretained) IBOutlet NSTextField *userName;
+@property (unsafe_unretained) IBOutlet NSTextField *userEmail;
+@property (unsafe_unretained) IBOutlet NSTextField *licenseId;
 
 @end
 

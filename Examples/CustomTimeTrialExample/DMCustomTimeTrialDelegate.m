@@ -12,10 +12,10 @@
 
 @interface DMCustomTimeTrialDelegate () <DMActivationControllerDelegate>
 
-@property (strong) NSMutableArray *observers;
+@property (retain) NSMutableArray *observers;
 @property (readonly) NSString *activeTimeLeftStr;
 
-@property (weak) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
 @end
 
 @implementation DMCustomTimeTrialDelegate

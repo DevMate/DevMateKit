@@ -11,7 +11,7 @@
 
 @interface DMMainAppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
 @end
 
 @implementation DMMainAppDelegate

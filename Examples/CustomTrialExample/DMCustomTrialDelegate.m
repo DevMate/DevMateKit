@@ -14,12 +14,12 @@
 #define DM_TRIAL_CLICK_COUNT 1
 
 @interface DMCustomTrialDelegate () <DMActivationControllerDelegate>
-@property (weak) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSTextField *textField;
-@property (weak) IBOutlet NSButton *actionButton;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSTextField *textField;
+@property (unsafe_unretained) IBOutlet NSButton *actionButton;
 - (IBAction)doSomeAction:(id)sender;
 
-@property (strong) id notificationObject;
+@property (retain) id notificationObject;
 
 @end
 

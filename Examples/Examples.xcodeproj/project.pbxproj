@@ -57,6 +57,7 @@
 		335F0A641A15FEA6001BCB49 /* DMActivationsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F0A621A15FEA6001BCB49 /* DMActivationsDelegate.m */; };
 		335F0A651A15FEA6001BCB49 /* DMCustomActivationWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335F0A631A15FEA6001BCB49 /* DMCustomActivationWindow.xib */; };
 		335F0A671A15FEC3001BCB49 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335F0A661A15FEC3001BCB49 /* MainMenu.xib */; };
+		33A3D2AC1C9170D9002C66E6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33A3D2AB1C9170D9002C66E6 /* MainMenu.xib */; };
 		33AB46B71A16077400273934 /* DMLicenseInfoStepController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AB46B51A16077400273934 /* DMLicenseInfoStepController.m */; };
 		33AB46B81A16077400273934 /* DMLicenseInfoStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AB46B61A16077400273934 /* DMLicenseInfoStepView.xib */; };
 		33AB46BC1A1632A500273934 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F09821A152B41001BCB49 /* main.m */; };
@@ -86,7 +87,6 @@
 		33EC2BB51BDFDEBB0007F6E0 /* HelperExample.app in Copy Files: Helper */ = {isa = PBXBuildFile; fileRef = 33EC2B941BDF93840007F6E0 /* HelperExample.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33EC2BB71BDFEC130007F6E0 /* DevMateKit.framework in Copy Files: Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33F0046F1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F0046E1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m */; };
-		33F004761B94533B00D86DE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F004741B94533B00D86DE6 /* MainMenu.xib */; };
 		33F004891B9453FF00D86DE6 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; };
 		33F0048B1B94541200D86DE6 /* DevMateKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 335F08EA1A14C489001BCB49 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33F0048E1B94553000D86DE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F09821A152B41001BCB49 /* main.m */; };
@@ -305,6 +305,7 @@
 		335F0A621A15FEA6001BCB49 /* DMActivationsDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DMActivationsDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		335F0A631A15FEA6001BCB49 /* DMCustomActivationWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMCustomActivationWindow.xib; sourceTree = "<group>"; };
 		335F0A661A15FEC3001BCB49 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		33A3D2AB1C9170D9002C66E6 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		33AB46B41A16077400273934 /* DMLicenseInfoStepController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DMLicenseInfoStepController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		33AB46B51A16077400273934 /* DMLicenseInfoStepController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DMLicenseInfoStepController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		33AB46B61A16077400273934 /* DMLicenseInfoStepView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMLicenseInfoStepView.xib; sourceTree = "<group>"; };
@@ -339,8 +340,6 @@
 		33F004691B94533B00D86DE6 /* CustomTimeTrialExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTimeTrialExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F0046D1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMCustomTimeTrialDelegate.h; sourceTree = "<group>"; };
 		33F0046E1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMCustomTimeTrialDelegate.m; sourceTree = "<group>"; };
-		33F004751B94533B00D86DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		33F004901B94555F00D86DE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -702,7 +701,7 @@
 			children = (
 				33F0046D1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.h */,
 				33F0046E1B94533B00D86DE6 /* DMCustomTimeTrialDelegate.m */,
-				33F004741B94533B00D86DE6 /* MainMenu.xib */,
+				33A3D2AB1C9170D9002C66E6 /* MainMenu.xib */,
 			);
 			path = CustomTimeTrialExample;
 			sourceTree = "<group>";
@@ -1159,7 +1158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33F004761B94533B00D86DE6 /* MainMenu.xib in Resources */,
+				33A3D2AC1C9170D9002C66E6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1307,15 +1306,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				33BD917A1B28466100FA1342 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		33F004741B94533B00D86DE6 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				33F004751B94533B00D86DE6 /* Base */,
-				33F004901B94555F00D86DE6 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";

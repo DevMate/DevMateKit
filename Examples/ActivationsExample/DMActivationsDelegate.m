@@ -15,10 +15,10 @@
 
 @interface DMActivationsDelegate () <DMActivationControllerDelegate>
 
-@property (weak) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSButton *activateButton;
-@property (strong) DMActivationController *customController;
-@property (strong) id notificationObject;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSButton *activateButton;
+@property (retain) DMActivationController *customController;
+@property (retain) id notificationObject;
 
 - (IBAction)processActivation:(id)sender;
 
