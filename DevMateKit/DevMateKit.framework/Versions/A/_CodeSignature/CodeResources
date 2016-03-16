@@ -10,7 +10,7 @@
 		</data>
 		<key>Resources/Autoupdate.app/Contents/MacOS/Autoupdate</key>
 		<data>
-		3JqH5iu6cx55DORmicOGPAXNfno=
+		BTFlPN7lzRbaROkxtcMmlxYCtEE=
 		</data>
 		<key>Resources/Autoupdate.app/Contents/PkgInfo</key>
 		<data>
@@ -138,15 +138,15 @@
 		</data>
 		<key>Resources/DMActivationStepView.nib</key>
 		<data>
-		TGFqWu+UFqKnqbdQNifqkZXSbwo=
+		4E9i1LK1oLxemgaytUdp14KwACE=
 		</data>
 		<key>Resources/DMActivationWindow.nib</key>
 		<data>
-		YxQGF/DNolMK+jPbpoWDM9dNTBU=
+		cKDn3F0/Bqz1xqT6JMPGhwhPyG4=
 		</data>
 		<key>Resources/DMAdditionalActivationStepView.nib</key>
 		<data>
-		yZVwtMC/ngg4G87+1ATePrwCJMg=
+		WAnOw/XYxVpTlVSc5mU4jJLsGqg=
 		</data>
 		<key>Resources/DMAttachment.tiff</key>
 		<data>
@@ -154,19 +154,19 @@
 		</data>
 		<key>Resources/DMDeactivationStepView.nib</key>
 		<data>
-		oMqfs8O4N5I0zIF/9QSvK1xU9ew=
+		p8b52CBh/BZYwEps2cXcOo9jrg0=
 		</data>
 		<key>Resources/DMEmbeddedStoreStepView.nib</key>
 		<data>
-		YO2yZmOaJa6e1HY6Qcic0045TE0=
+		vYWVs/BTODW9MJAYC7T7drdpe/I=
 		</data>
 		<key>Resources/DMExpirationStepView.nib</key>
 		<data>
-		L937Mz8laTsGkoAXxB3lJWDqhKM=
+		qNzM3rLgvNyNEYlRzPNk0MRTqEU=
 		</data>
 		<key>Resources/DMFailureStepView.nib</key>
 		<data>
-		b049Lfo50kOqeK0cFxFxvU/KjA8=
+		PdWGGKKeAy7uvil3OYRr7WAA35M=
 		</data>
 		<key>Resources/DMInfoButton.tiff</key>
 		<data>
@@ -206,31 +206,31 @@
 		</data>
 		<key>Resources/DMSuccessStepView.nib</key>
 		<data>
-		TZ4u9weXKciOOUIIrPHZRoMRxVk=
+		TW1aMpWe0F7hqnpkaX8WKAa0B78=
 		</data>
 		<key>Resources/DMTrialManualExpiredStepView.nib</key>
 		<data>
-		qkw6w9JZ02hgk0aPUB56I/YYOJw=
+		+YZtSVREHKCXW8lvcxYHKHLOZxg=
 		</data>
 		<key>Resources/DMTrialManualReminderStepView.nib</key>
 		<data>
-		TGnByHyuPk3OD/+Ch0LLCnG4J8s=
+		QfJDK25Zo73NMOrZ5ZR+ZITPhvA=
 		</data>
 		<key>Resources/DMTrialTimeExpiredStepView.nib</key>
 		<data>
-		n3alJDjYSPDZkJ8KZ+6RU1ItxEc=
+		9Wxz7Ot2tqNDxbo9JSq1wHl0Cr0=
 		</data>
 		<key>Resources/DMTrialTimeReminderStepView.nib</key>
 		<data>
-		A8mYcxJMqvikWAmjgGCKFsYlz1I=
+		BmlVNYvm7ZaRaprnsKz1xC4KmE8=
 		</data>
 		<key>Resources/DMTrialWelcomeStepView.nib</key>
 		<data>
-		fByIDQ1AxZWvWw4OpORSolvt5V4=
+		U9QR+w2U4GQQLNX4+tUd2zXa5gw=
 		</data>
 		<key>Resources/DMWelcomeStepView.nib</key>
 		<data>
-		nuNEEkJieSLgc7kXlm6PaJvNOjQ=
+		0NGip5y3u8HgoDbZiX08ZUoZjCU=
 		</data>
 		<key>Resources/DevMateFeedbackWindow.nib</key>
 		<data>
@@ -242,7 +242,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		9Lox+YLZqHFF27wbijEPsI73alo=
+		rrsZhw67zq+nhliZcPTqXNr0qFI=
 		</data>
 		<key>Resources/NOTICE</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/MacOS/Problem Reporter Sandboxed</key>
 		<data>
-		uP0qbWt9Mkap0cp5r9IBWFXlqlE=
+		F6neoHfPlf8SADc6MNgtP7dQCB8=
 		</data>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/PkgInfo</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>Resources/Problem Reporter.app/Contents/MacOS/Problem Reporter</key>
 		<data>
-		LhoQ9PWQBPB5ClWAZ0dyipYZcm8=
+		fb3JwkN56OZa9I8unYEwqnLZEE8=
 		</data>
 		<key>Resources/Problem Reporter.app/Contents/PkgInfo</key>
 		<data>
@@ -323,7 +323,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G+0RMzPDMujE9niZkskJI2tb1l0=
+			/07NVpoXtusu3YyxCx2p/8C/nZM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -377,7 +377,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wbVAaLZHpdWv+s2VQvthQDWpBks=
+			6VIIvZV/62z6Vsr7HOQuD5Et4sk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -431,7 +431,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			asR868/s1iiBfSVy6CkxZcflE0s=
+			fT8iqKJ6rEa1H8t1EZPdeBE0Jeo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -485,7 +485,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VU01kBTjJlqLn7l+CJox6+VEfzU=
+			YrbPHqtNQMxTMt+RrJt4w8ytDbc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -593,7 +593,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nYNyuX/INkTOeOJgQzKVL622hIs=
+			G3XrkgCT7xb01pw9ArRmWdzlqxg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -647,7 +647,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0UOT+BnI2OOPEKEYEcndLKR1F7A=
+			UTweYn7kDi5+CdPxVUR7RQwdWs0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -701,7 +701,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s1Z1057WtNW+i/7R7ir1I2sFsg4=
+			VDo2Xls34pCvBp+uM5kpdkCjEQA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -755,7 +755,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SiCkp2HSO2dj6mPYZqTOZsQs6Xs=
+			l8sLhFge+bVG/7vDoq/D7yQYt7I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -809,7 +809,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CMJCpt5cjQ4YtvbYhSL1NjZZ174=
+			DX68QXjE7RDqbLvaHwfOFx9hG4M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -863,7 +863,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7b4E9Ol1DIF+Cbk2WD2alSslOrU=
+			S2nkMFD2X1Fn/fcAgIPTye9Yqiw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -917,7 +917,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uCp8EYUY19SrvyCeTkWOMLu94lY=
+			9iYc7uNHaaa2znKvm9W9JXkHrbI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -947,7 +947,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			qcwu1/sA13ixLl11EtCKQBVuYyo=
+			4T/VjV2tism9yGU0wFfAj0YQ8aA=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.devmate.DevMateIssuesReporter" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = S8EX82NJP6</string>
@@ -978,7 +978,7 @@
 		</data>
 		<key>Headers/DMEmbeddedStoreStepController.h</key>
 		<data>
-		MV7y9MJKOcjZmTRKWecviHcnJB8=
+		m9aQqiQmMlynpPW+jjeG+LLkgVs=
 		</data>
 		<key>Headers/DMExpirationStepController.h</key>
 		<data>
@@ -1066,7 +1066,7 @@
 		</data>
 		<key>Headers/DMWelcomeStepController.h</key>
 		<data>
-		CPJw/djnXh93oegpMgNRNotDY74=
+		XB9DL9hUMk8Nzhq52P7ZgCj3HA8=
 		</data>
 		<key>Headers/DevMateActivations.h</key>
 		<data>
@@ -1138,7 +1138,7 @@
 		</data>
 		<key>Resources/Autoupdate.app/Contents/MacOS/Autoupdate</key>
 		<data>
-		3JqH5iu6cx55DORmicOGPAXNfno=
+		BTFlPN7lzRbaROkxtcMmlxYCtEE=
 		</data>
 		<key>Resources/Autoupdate.app/Contents/PkgInfo</key>
 		<data>
@@ -1271,15 +1271,15 @@
 		</data>
 		<key>Resources/DMActivationStepView.nib</key>
 		<data>
-		TGFqWu+UFqKnqbdQNifqkZXSbwo=
+		4E9i1LK1oLxemgaytUdp14KwACE=
 		</data>
 		<key>Resources/DMActivationWindow.nib</key>
 		<data>
-		YxQGF/DNolMK+jPbpoWDM9dNTBU=
+		cKDn3F0/Bqz1xqT6JMPGhwhPyG4=
 		</data>
 		<key>Resources/DMAdditionalActivationStepView.nib</key>
 		<data>
-		yZVwtMC/ngg4G87+1ATePrwCJMg=
+		WAnOw/XYxVpTlVSc5mU4jJLsGqg=
 		</data>
 		<key>Resources/DMAttachment.tiff</key>
 		<data>
@@ -1287,19 +1287,19 @@
 		</data>
 		<key>Resources/DMDeactivationStepView.nib</key>
 		<data>
-		oMqfs8O4N5I0zIF/9QSvK1xU9ew=
+		p8b52CBh/BZYwEps2cXcOo9jrg0=
 		</data>
 		<key>Resources/DMEmbeddedStoreStepView.nib</key>
 		<data>
-		YO2yZmOaJa6e1HY6Qcic0045TE0=
+		vYWVs/BTODW9MJAYC7T7drdpe/I=
 		</data>
 		<key>Resources/DMExpirationStepView.nib</key>
 		<data>
-		L937Mz8laTsGkoAXxB3lJWDqhKM=
+		qNzM3rLgvNyNEYlRzPNk0MRTqEU=
 		</data>
 		<key>Resources/DMFailureStepView.nib</key>
 		<data>
-		b049Lfo50kOqeK0cFxFxvU/KjA8=
+		PdWGGKKeAy7uvil3OYRr7WAA35M=
 		</data>
 		<key>Resources/DMInfoButton.tiff</key>
 		<data>
@@ -1339,31 +1339,31 @@
 		</data>
 		<key>Resources/DMSuccessStepView.nib</key>
 		<data>
-		TZ4u9weXKciOOUIIrPHZRoMRxVk=
+		TW1aMpWe0F7hqnpkaX8WKAa0B78=
 		</data>
 		<key>Resources/DMTrialManualExpiredStepView.nib</key>
 		<data>
-		qkw6w9JZ02hgk0aPUB56I/YYOJw=
+		+YZtSVREHKCXW8lvcxYHKHLOZxg=
 		</data>
 		<key>Resources/DMTrialManualReminderStepView.nib</key>
 		<data>
-		TGnByHyuPk3OD/+Ch0LLCnG4J8s=
+		QfJDK25Zo73NMOrZ5ZR+ZITPhvA=
 		</data>
 		<key>Resources/DMTrialTimeExpiredStepView.nib</key>
 		<data>
-		n3alJDjYSPDZkJ8KZ+6RU1ItxEc=
+		9Wxz7Ot2tqNDxbo9JSq1wHl0Cr0=
 		</data>
 		<key>Resources/DMTrialTimeReminderStepView.nib</key>
 		<data>
-		A8mYcxJMqvikWAmjgGCKFsYlz1I=
+		BmlVNYvm7ZaRaprnsKz1xC4KmE8=
 		</data>
 		<key>Resources/DMTrialWelcomeStepView.nib</key>
 		<data>
-		fByIDQ1AxZWvWw4OpORSolvt5V4=
+		U9QR+w2U4GQQLNX4+tUd2zXa5gw=
 		</data>
 		<key>Resources/DMWelcomeStepView.nib</key>
 		<data>
-		nuNEEkJieSLgc7kXlm6PaJvNOjQ=
+		0NGip5y3u8HgoDbZiX08ZUoZjCU=
 		</data>
 		<key>Resources/DevMateFeedbackWindow.nib</key>
 		<data>
@@ -1375,7 +1375,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		9Lox+YLZqHFF27wbijEPsI73alo=
+		rrsZhw67zq+nhliZcPTqXNr0qFI=
 		</data>
 		<key>Resources/NOTICE</key>
 		<data>
@@ -1387,7 +1387,7 @@
 		</data>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/MacOS/Problem Reporter Sandboxed</key>
 		<data>
-		uP0qbWt9Mkap0cp5r9IBWFXlqlE=
+		F6neoHfPlf8SADc6MNgtP7dQCB8=
 		</data>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/PkgInfo</key>
 		<data>
@@ -1407,7 +1407,7 @@
 		</data>
 		<key>Resources/Problem Reporter.app/Contents/MacOS/Problem Reporter</key>
 		<data>
-		LhoQ9PWQBPB5ClWAZ0dyipYZcm8=
+		fb3JwkN56OZa9I8unYEwqnLZEE8=
 		</data>
 		<key>Resources/Problem Reporter.app/Contents/PkgInfo</key>
 		<data>
@@ -1456,7 +1456,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G+0RMzPDMujE9niZkskJI2tb1l0=
+			/07NVpoXtusu3YyxCx2p/8C/nZM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1510,7 +1510,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wbVAaLZHpdWv+s2VQvthQDWpBks=
+			6VIIvZV/62z6Vsr7HOQuD5Et4sk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1564,7 +1564,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			asR868/s1iiBfSVy6CkxZcflE0s=
+			fT8iqKJ6rEa1H8t1EZPdeBE0Jeo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1618,7 +1618,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VU01kBTjJlqLn7l+CJox6+VEfzU=
+			YrbPHqtNQMxTMt+RrJt4w8ytDbc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1726,7 +1726,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nYNyuX/INkTOeOJgQzKVL622hIs=
+			G3XrkgCT7xb01pw9ArRmWdzlqxg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1780,7 +1780,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0UOT+BnI2OOPEKEYEcndLKR1F7A=
+			UTweYn7kDi5+CdPxVUR7RQwdWs0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1834,7 +1834,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s1Z1057WtNW+i/7R7ir1I2sFsg4=
+			VDo2Xls34pCvBp+uM5kpdkCjEQA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1888,7 +1888,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SiCkp2HSO2dj6mPYZqTOZsQs6Xs=
+			l8sLhFge+bVG/7vDoq/D7yQYt7I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1947,7 +1947,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CMJCpt5cjQ4YtvbYhSL1NjZZ174=
+			DX68QXjE7RDqbLvaHwfOFx9hG4M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2001,7 +2001,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7b4E9Ol1DIF+Cbk2WD2alSslOrU=
+			S2nkMFD2X1Fn/fcAgIPTye9Yqiw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2055,7 +2055,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uCp8EYUY19SrvyCeTkWOMLu94lY=
+			9iYc7uNHaaa2znKvm9W9JXkHrbI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2082,7 +2082,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			LaEg14ImYtidzBYZCIG103kWpEM=
+			j45XdsVbg+G6oo/t9iLbVNe9ut0=
 			</data>
 			<key>requirement</key>
 			<string>anchor apple generic and identifier "com.devmate.UpdateInstaller" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = S8EX82NJP6)</string>
