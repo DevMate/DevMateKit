@@ -8,12 +8,6 @@
 
 #import "DMSwiftKevlar.h"
 
-static __attribute__((constructor)) void _GlobalVarsInitializer(void)
-{
-    _my_secret_activation_check = &DMKIsApplicationActivated;
-    _my_secret_license_info_getter = &DMKCopyLicenseUserInfo;
-}
-
 void InvalidateAppLicense(void)
 {
     @autoreleasepool
