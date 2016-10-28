@@ -8,7 +8,6 @@
 
 INFOPLIST_FILE = Common/Info.plist
 CODE_SIGN_ENTITLEMENTS = Common/Examples.entitlements
-CODE_SIGN_IDENTITY = Mac Developer
 
 LD_RUNPATH_SEARCH_PATHS = @executable_path/../Frameworks
 FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../DevMateKit" "$(PROJECT_DIR)/../DevMateKit/DevMateKit.framework/Frameworks"

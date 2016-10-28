@@ -987,16 +987,73 @@
 				TargetAttributes = {
 					335F092E1A14F3E5001BCB49 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					335F09651A152B1F001BCB49 = {
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					335F09911A152EC9001BCB49 = {
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					335F09A61A1530C9001BCB49 = {
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					335F09D11A15360B001BCB49 = {
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					335F09E41A15DD21001BCB49 = {
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					335F0A0A1A15ECFB001BCB49 = {
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					335F0A4A1A15FE57001BCB49 = {
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					33AB46BA1A1632A500273934 = {
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					33AB47031A164D6400273934 = {
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
 					};
 					33BD91701B28466100FA1342 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					33EC2B6F1BDF82D40007F6E0 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
 					};
 					33EC2B931BDF93840007F6E0 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = S8EX82NJP6;
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 0;
@@ -1005,6 +1062,9 @@
 					};
 					33F004681B94533B00D86DE6 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2M6BY8QGR8;
+						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1395,6 +1455,7 @@
 		335F09491A14F3E5001BCB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1414,6 +1475,7 @@
 		335F094A1A14F3E5001BCB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1433,6 +1495,7 @@
 		335F097A1A152B1F001BCB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1440,6 +1503,7 @@
 		335F097B1A152B1F001BCB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1447,6 +1511,7 @@
 		335F099D1A152EC9001BCB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1454,6 +1519,7 @@
 		335F099E1A152EC9001BCB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1461,6 +1527,7 @@
 		335F09B51A1530C9001BCB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1468,6 +1535,7 @@
 		335F09B61A1530C9001BCB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1475,6 +1543,7 @@
 		335F09DD1A15360B001BCB49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1482,6 +1551,7 @@
 		335F09DE1A15360B001BCB49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1490,6 +1560,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1498,6 +1569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1506,6 +1578,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1514,6 +1587,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1522,6 +1596,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1530,6 +1605,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1538,6 +1614,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Debug;
@@ -1546,6 +1623,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
 			name = Release;
@@ -1554,6 +1632,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				INFOPLIST_FILE = URLSchemeExample/Info.plist;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
@@ -1563,6 +1642,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				INFOPLIST_FILE = URLSchemeExample/Info.plist;
 				PRODUCT_NAME = "${TARGET_NAME}";
 			};
@@ -1572,7 +1652,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33BD91941B284A3B00FA1342 /* Swift.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1580,7 +1662,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33BD91941B284A3B00FA1342 /* Swift.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1588,6 +1672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1599,6 +1684,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1610,6 +1696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1624,6 +1711,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = MainUpdaterExample/HelperExample/Info.plist;
@@ -1636,6 +1724,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1644,6 +1733,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33D9FE261ADEDE15002A433B /* TrialAndActivation.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -13,7 +13,7 @@
 #import <sys/types.h>
 #import <sys/ptrace.h>
 
-#define KEVLAR_VERSION  @"4.1.2"
+#define KEVLAR_VERSION  @"4.2.1"
 
 // -------------------------------------------------------------------------------------------------
 // SOME ADDITIONAL INLINE FUNCTIONS
@@ -26,7 +26,7 @@ NS_INLINE void DMKStopDebug(void)
 }
 
 //! CodeSign validation function that will raise an excetions in case when signature is wrong
-#define DMKCheckBundleSignatureWithURL fg2rjw4rfWufgL6
+#define DMKCheckBundleSignatureWithURL IsX6XkL4PBDpyuS
 FOUNDATION_EXTERN void DMKCheckBundleSignatureWithURL(CFURLRef bundleURL, SecCSFlags validationFlags);
 
 NS_INLINE void DMKCheckMainBundleSignature(void)
@@ -102,9 +102,11 @@ FOUNDATION_EXTERN NSString *const DMKevlarRequestReactivationIdentifier; // NSSt
 FOUNDATION_EXTERN NSString *const DMKevlarRequestAdditionalInfo; // NSDictionary
 
 //! License info keys
-FOUNDATION_EXTERN NSString *const DMKevlarLicenseActivationIdKey; // NSString
+FOUNDATION_EXTERN NSString *const DMKevlarLicenseActivationIdKey; // NSString, license identifier
+FOUNDATION_EXTERN NSString *const DMKevlarLicenseActivationNumberKey; // NSString, activation number that was used to activate app
 FOUNDATION_EXTERN NSString *const DMKevlarLicenseUserNameKey; // NSString
 FOUNDATION_EXTERN NSString *const DMKevlarLicenseUserEmailKey; // NSString
+FOUNDATION_EXTERN NSString *const DMKevlarLicenseCompanyKey; // NSString, may be absent
 FOUNDATION_EXTERN NSString *const DMKevlarLicenseOrderDateKey; // NSDate
 FOUNDATION_EXTERN NSString *const DMKevlarLicenseActivationDateKey; // NSDate
 FOUNDATION_EXTERN NSString *const DMKevlarLicenseExpirationDateKey; // NSDate, may be absent in case of lifetime
@@ -122,69 +124,69 @@ FOUNDATION_EXTERN NSString *const DMKApplicationActivationStatusDidChangeNotific
 
 
 //! Function help with running timer for advanced check
-#define DMKRunNewIntegrityCheckTimer JFptMRwC8XSDLl3UZ
+#define DMKRunNewIntegrityCheckTimer DzVpwUg0VXKMIfCPA
 FOUNDATION_EXTERN void DMKRunNewIntegrityCheckTimer(NSUInteger num, NSTimeInterval checkFrequency);
 
 //! Checks if applicaion activated
-#define DMKIsApplicationActivated sFOn6oMHQICRC84zCK
+#define DMKIsApplicationActivated PfCuPgJSp5KVlvc8W1
 FOUNDATION_EXTERN BOOL DMKIsApplicationActivated(DMKevlarError *outKevlarError);
 
 //! Returns user license info
-#define DMKCopyLicenseUserInfo vvAdDOkgkKpODplPxY7
+#define DMKCopyLicenseUserInfo dReea3NiUFGwgD52YPa
 FOUNDATION_EXTERN CFDictionaryRef DMKCopyLicenseUserInfo(void) CF_RETURNS_RETAINED;
 
 //! Forces license validation request on DevMate server
-#define DMKValidateLicense t3aJv78SvL787E3hGSiJ
+#define DMKValidateLicense i2rRAQi8BfdE2G9geRSu
 FOUNDATION_EXTERN void DMKValidateLicense(void (^completionHandler)(NSError *errorOrNil));
 
 //! Deactivates application and invalidates license info
-#define DMKInvalidateLicense ZmAGIQwV3ugmOlsoc2yyc
-FOUNDATION_EXTERN void DMKInvalidateLicense(void);
+#define DMKInvalidateLicense kLLTbFMUP234v8xDp6Uck
+FOUNDATION_EXTERN BOOL DMKInvalidateLicense(void);
 
 /**
  This category will extend functionality of NSApplication to be complies with Kevlar concept of protection.
  Rigth now, some helper inteface have been declare there, because it is kind of complicated to load category.
  */
-#define com_devmate_Kevlar tEPa7pLR2H
+#define com_devmate_Kevlar YC2eXYjMnR
 @interface NSApplication (com_devmate_Kevlar)
 
 /**
  Deprecated. Property is not used for storing license info anymore.
  */
-#define licenseStorageFormat Xa4YHfDxryV
+#define licenseStorageFormat kQBUCSgjpQ7
 @property (nonatomic) NSPropertyListFormat licenseStorageFormat DEPRECATED_MSG_ATTRIBUTE("Property is not used for storing license info anymore.");
 
 /**
  Deprecated. Use licenseStorageLocation property instead.
  */
-#define licenseStoragePath ic3tw0h5sOpu
+#define licenseStoragePath p9RySW85gU29
 @property (nonatomic) NSSearchPathDirectory licenseStoragePath DEPRECATED_MSG_ATTRIBUTE("Use licenseStorageLocation property instead.");
 
 /**
  License could be store in different location, this option provied information to application, where to find and where to store license. Property is bitwise mask.
  Default is DMKLicenseStorageAllMask
  */
-#define licenseStorageLocation nK1IsBkcvxB65PN0k
+#define licenseStorageLocation qtB75I43BtTYB1oOp
 @property (nonatomic) DMKLicenseStorageLocation licenseStorageLocation;
 
 /** 
  Indicate application activation status. This option is usefull for bindings. For more security use DMKIsApplicationActivated function.
  */
-#define isActivated w6TwXQrpOYTmynQ
+#define isActivated KIEe6H9fFkHP2m0
 @property (nonatomic, readonly) BOOL isActivated;
 
 /**
  Return user-friendly information about license, with out any system information. For more security use DMKCopyLicenseUserInfo function.
  */
-#define licenseUserInfo FlZiKv8gDZi8wa
+#define licenseUserInfo CiigUIy444xhDC
 @property (nonatomic, readonly) NSDictionary *licenseUserInfo;
 
 /**
  Removes all license info on local storages and sends server request to deactivate it.
  In case, if license was invalidated, this method removes all license information
  */
-#define invalidateLicense r1xVNUiPGj4YO
-- (void)invalidateLicense;
+#define invalidateLicense nghXJNoRh9mLn
+- (BOOL)invalidateLicense;
 
 /** 
  Activate process 
@@ -197,8 +199,8 @@ FOUNDATION_EXTERN void DMKInvalidateLicense(void);
  Setup public key
  @param publicKey String with public key
  */
-#define setPublicKeyWithString r35HybtEhA0TFmLo
-+ (void)setPublicKeyWithString:(NSString *)keyString;
+#define setPublicKeyWithString ADVdkXWYgeiM1AKU
++ (void)setPublicKeyWithString:(NSString *)keyString DEPRECATED_MSG_ATTRIBUTE("Does nothing now.");
 
 @end
 
