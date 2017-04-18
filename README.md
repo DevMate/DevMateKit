@@ -2,7 +2,7 @@
   <img src="https://github.com/DevMate/DevMateKit/blob/master/DevMate-logo.png" alt="DevMate-logo">
 </p>
 
-##What Is DevMate
+## What Is DevMate
 
 [DevMate](http://devmate.com) is development and distribution platform for OS X developers.
 
@@ -28,11 +28,11 @@ In order to connect your application to DevMate you are to integrate DevMateKit 
 
 * **Feedback.** Your customers can send feedback right from the app.
 
-##Get Started
+## Get Started
 
 1\.  Drag and drop **DevMateKit** folder to your project. Check the '_Copy items if needed_' in the dialogue appeared; check '_Create groups_' control for '_Added folders_' group; uncheck all items in '_Add to targets_' table.
 
-####What's Inside
+#### What's Inside
 
 * `DevMateKit.framework` — DevMateKit iteslf.
 
@@ -89,7 +89,7 @@ After you build and run your application, it will start sending launch reports t
 
 You can read more on DevMateKit customization in wiki article.
 
-###CocoaPods Integration
+### CocoaPods Integration
 
 You can integrate DevMateKit into your project using [CocoaPods](http://cocoadocs.org/docsets/DevMateKit/). Here is the podfile:
 
@@ -98,11 +98,11 @@ platform :osx, '10.7'
 pod 'DevMateKit'
 ````
 
-##Activations and Trial
+## Activations and Trial
 
 To manage activations and trial you need to have Kevlar library installed which is generated uniquely for each application. You can read more on it [here](http://docs.devmate.com/v1.0/docs/activations-and-trial).
 
-##Issue Reporter Setup
+## Issue Reporter Setup
 
 DevMateKit allows sending crashes and exception reports that can be viewed later in [Issues Management](http://docs.devmate.com/v1.0/docs/issues-management) section of DevMate Dashboard. Moreover, you will be able to view how issues of your app are distributed by various parameters in [Issues Statistics](http://docs.devmate.com/v1.0/docs/issues-statistics) section, which will help you to detrmine the weaker places of the app.
 
@@ -148,7 +148,7 @@ For Swift projects:
 
 You can learn more on feedback setup and configuration in [wiki article](https://github.com/DevMate/DevMateKit/wiki/Feedback).
 
-##Updates Setup
+## Updates Setup
 
 To keep user of your app updated, do the following.
 
