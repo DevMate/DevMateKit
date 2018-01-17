@@ -15,3 +15,8 @@ void InvalidateAppLicense(void)
         [NSApp invalidateLicense];
     }
 }
+
+void ValidateAppLicense(void (^callback)(NSError *errorOrNil))
+{
+    DMKValidateLicense(callback);
+}
