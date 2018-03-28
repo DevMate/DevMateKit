@@ -22,7 +22,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		JGKTGG+ZOMJoUw+pgUWK+V+kHEw=
+		anwS44Op5Rp3uyOkEBmoP2VJK64=
 		</data>
 		<key>Resources/de.lproj/Reports.strings</key>
 		<dict>
@@ -139,7 +139,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			geQ5Dwe66xFGuvXEI0UcpYTKHFU=
+			unmgjHAJqOX+lVM2J7krtFGzEgk=
 			</data>
 			<key>requirement</key>
 			<string>identifier "coop.plausible.CrashReporter" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2M6BY8QGR8"</string>
@@ -192,11 +192,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JGKTGG+ZOMJoUw+pgUWK+V+kHEw=
+			anwS44Op5Rp3uyOkEBmoP2VJK64=
 			</data>
 			<key>hash2</key>
 			<data>
-			zwuEgufazgm51q9KogILl2t753UvrBlu2trKhtJUD1E=
+			iVlEZizfFH8B5hWtoU8tJgN3crCiJ/mj1JPoS1/NYTc=
 			</data>
 		</dict>
 		<key>Resources/de.lproj/Reports.strings</key>
