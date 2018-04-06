@@ -73,7 +73,7 @@
     
     if (error)
     {
-        [self updater:nil didAbortWithError:error];
+        [self updater:self.mainAppUpdater didAbortWithError:error];
     }
 }
 

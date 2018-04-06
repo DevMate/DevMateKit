@@ -1,3 +1,7 @@
+# Version 1.8.2
+**Apr 6, 2018**
+* Fixed potential runtime exceptions when changing UI in background thread in activation dialog
+
 # Version 1.8.1
 **Mar 28, 2018**
 * Fixed crash when clicking "Enter Activation Number" button with DevMateKit v1.8

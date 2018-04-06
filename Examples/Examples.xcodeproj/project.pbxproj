@@ -987,55 +987,61 @@
 				TargetAttributes = {
 					335F092E1A14F3E5001BCB49 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Manual;
 					};
 					335F09651A152B1F001BCB49 = {
+						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
+						ProvisioningStyle = Manual;
 					};
 					335F09911A152EC9001BCB49 = {
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					335F09A61A1530C9001BCB49 = {
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					335F09D11A15360B001BCB49 = {
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					335F09E41A15DD21001BCB49 = {
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					335F0A0A1A15ECFB001BCB49 = {
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					335F0A4A1A15FE57001BCB49 = {
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					33AB46BA1A1632A500273934 = {
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					33AB47031A164D6400273934 = {
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					33BD91701B28466100FA1342 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
@@ -1046,13 +1052,13 @@
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					33EC2B931BDF93840007F6E0 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 0;
@@ -1063,7 +1069,7 @@
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 2M6BY8QGR8;
 						DevelopmentTeamName = "DevMate Inc.";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1390,9 +1396,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2M6BY8QGR8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1433,9 +1442,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2M6BY8QGR8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

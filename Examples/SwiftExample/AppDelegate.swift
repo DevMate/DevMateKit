@@ -85,8 +85,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, DevMateKitDelegate
         print("Tracking report \(resultStr).")
     }
     
-    @objc func feedbackController(_ controller: DMFeedbackController!,
-                                  parentWindowFor mode: DMFeedbackMode) -> NSWindow? {
+    @objc func feedbackController(_ controller: DMFeedbackController,
+                                  parentWindowFor mode: DMFeedbackMode) -> NSWindow {
         return window
     }
 
