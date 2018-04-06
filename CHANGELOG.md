@@ -1,8 +1,8 @@
-## Version 1.8.1
+# Version 1.8.1
 **Mar 28, 2018**
 * Fixed crash when clicking "Enter Activation Number" button with DevMateKit v1.8
 
-## Version 1.8
+# Version 1.8
 **Mar 22, 2018**
 * Updated Sparkle to the latest public release version 1.18.1 (updating functionality core)
 * Fixed runtime warnings when working with your own copy of the Sparkle framework
@@ -13,24 +13,24 @@
 * Removed gathering additional report info API (issues reporter)
 * Updated copyright year in all public headers
 
-## Version 1.7.1
+# Version 1.7.1
 **Mar 22, 2016**
 * Fixed code signature for XPC service
 
-## Version 1.7
+# Version 1.7
 **Mar 16, 2016**
 * Introducing a better app activation experience (http://blog.devmate.com/a-simple-a-b-split-test-to-boost-your-app-revenue/)
 
-## Version 1.6.2
+# Version 1.6.2
 **Mar 10, 2016**
 * Fixed problem that  was blocking Issues dialog after application crash  in some cases.
 
-## Version 1.6.1
+# Version 1.6.1
 **Mar 3, 2016**
 * Corrected auto resizing masks in XIB files of Activation dialog to make it possible to resize window vertically
 * Fixed crash while working with Feedback/Issues dialog if could not get current bundle info
 
-## Version 1.6
+# Version 1.6
 **Feb 23, 2016**
 * Added API for providing info about app installation if needed.
 * Added API for easy changing of feedback type via source code for Feedback dialog
@@ -41,7 +41,7 @@
 > **Important!**
 > If you used previous DevMateKit versions, you must remove `com.devmate.UpdateInstaller.xpc` component from your project because of moving it inside DevMateKit framework. You need to do it to avoid runtime error caused by duplicating mentioned XPC component inside the main app bundle.
 
-## Version 1.5
+# Version 1.5
 **Feb 10, 2016**
 * Updated PLCrashReporter (core for issue reporting) to version 1.3
 * Updated Sparkle (core for updates delivery) to version 1.13.1
@@ -52,7 +52,7 @@
 * Removed creating of unneeded folders for issue reporter
 * Fixed some other small bugs
 
-## Version 1.4
+# Version 1.4
 **Nov 3, 2015**
 * Added API for faster and easier setup of additional log URLs.
 * Updated FastSpring Embedded Store API to the latest public version.
@@ -62,7 +62,7 @@
 * Fixed problem with impossibility to update main app bundle via helper application.
 * Fixed compilation warnings that appeared in new Xcode version.
 
-## Version 1.3
+# Version 1.3
 **Sep 9, 2015**
 * Implemented changes into framework to satisfy App Transport Security (ATS) requirements for OS X 10.11 El Capitan
 * Updated Sparkle (updates core) to the latest version
@@ -73,13 +73,13 @@
 * Fixed other minor bugs
 > If you have `SUFeedURL` value in your *Info.plist* file or in user preferences or your `SUUpdater` delegate class implements `-feedURLStringForUpdater:` method, please check it to use URLs with https protocol only for correct work on OS X 10.11 El Capitan.
 
-## Version 1.2
+# Version 1.2
 **Jun 17, 2015**
 * Corrected constants declaration and added new APIs to use them in Swift projects
 * Deprecated some APIs which cannot be used in Swift projects
 * Fixed some minor bugs
 
-## Version 1.1.1
+# Version 1.1.1
 **Apr 28, 2015**
 * Fixed potential crash while using SUUpdaterQueue for updating
 * Fixed vulnerability of dylib hijacking (https://www.virusbtn.com/pdf/magazine/2015/vb201503-dylib-hijacking.pdf)
@@ -88,13 +88,13 @@
 * Using PNG format (when possible) for image attachments pasted from clipboard into issue reports or feedback messages
 * Other minor bugs fixed
 
-## Version 1.1
+# Version 1.1
 **Mar 13, 2015**
 * Added implementation of FastSpring embedded store
 * Resolved conflicts of PLCrashReporter classes in case of using own copy of this framework
 * Removed custom compile warning from inline functions
 
-## Version 1.0
+# Version 1.0
 **Feb 24, 2015**
 
 DevMateKit is the set of components necessary for collecting application usage data, tracking application health status and communication of end users with the developers.
