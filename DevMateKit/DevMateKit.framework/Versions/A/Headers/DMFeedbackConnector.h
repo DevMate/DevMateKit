@@ -5,8 +5,13 @@
 //  Copyright (c) 2015-2018 DevMate Inc. All rights reserved.
 //
 
+#if __has_feature(modules)
+@import Cocoa;
+#else
 #import <Cocoa/Cocoa.h>
-#import <DevMateKit/DMFeedbackController.h>
+#endif
+
+#import "DMFeedbackController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

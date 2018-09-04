@@ -12,13 +12,17 @@
 		<data>
 		s77Qkh2wqdPYUjFt9bgv89HFDMc=
 		</data>
+		<key>Resources/DMInfoButton_AquaDark.tiff</key>
+		<data>
+		KvPzd4Ug5n+Fka3h3k5iNKi8VWI=
+		</data>
 		<key>Resources/DevMateInfoPopoverView.nib</key>
 		<data>
-		rM9jaSRpa3pF+yi0I4L6qdTThF4=
+		vzvQEwhmkmUf1FjwxCFH+yfrgpw=
 		</data>
 		<key>Resources/DevMateIssuesWindow.nib</key>
 		<data>
-		gYoWOvl39zalWnJnMMJJE20fcVc=
+		hdC5mssGT+QvCKAsxwrey9ZJqgo=
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
@@ -139,7 +143,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			1dPSYNzBaF71V/T0f3VfJuMd+GI=
+			aekSqxMNCVYHk47ZCYE+5mzYy5o=
 			</data>
 			<key>requirement</key>
 			<string>identifier "coop.plausible.CrashReporter" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2M6BY8QGR8"</string>
@@ -166,26 +170,37 @@
 			Gh1VK+qeesjzQPYJtA/Pc5p23pZ34xwzBprckqPnXHw=
 			</data>
 		</dict>
+		<key>Resources/DMInfoButton_AquaDark.tiff</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KvPzd4Ug5n+Fka3h3k5iNKi8VWI=
+			</data>
+			<key>hash2</key>
+			<data>
+			hdPpTLn7T7MM3Bw+C+ox5PTdYk6ZfLymjYZSZMm4iTU=
+			</data>
+		</dict>
 		<key>Resources/DevMateInfoPopoverView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rM9jaSRpa3pF+yi0I4L6qdTThF4=
+			vzvQEwhmkmUf1FjwxCFH+yfrgpw=
 			</data>
 			<key>hash2</key>
 			<data>
-			cyn9rr7HcPUpH+lYjn1KwdHC3R1duFDXQk6RV1/luH8=
+			GkJrMN0ocfgP2StdA4LDbJx0cy+ugpcqUWoZm0SFe3c=
 			</data>
 		</dict>
 		<key>Resources/DevMateIssuesWindow.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gYoWOvl39zalWnJnMMJJE20fcVc=
+			hdC5mssGT+QvCKAsxwrey9ZJqgo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ar9xXZyM+Iv46agiab+WOfzJI+9iHxpEfm0CTE/ivyI=
+			tempTInnoJvboOf5QBbj8pw46AqwhsXDS3ZUvuIRwFY=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>

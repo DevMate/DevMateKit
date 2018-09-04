@@ -27,6 +27,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, DevMateKitDelegate
         if !_my_secret_activation_check!(&error).boolValue || DMKevlarError.noError != error {
             DevMateKit.setupTimeTrial(self, withTimeInterval: kDMTrialWeek)
         }
+        
+        // Setup activation delegate for all activation controllers
+        DMActivationController.setDelegate(self)
     }
 
     @IBAction func openFeedbackWindow(_ sender: AnyObject?) {
@@ -39,7 +42,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, DevMateKitDelegate
     }
     
     @IBAction func checkForUpdates(_ sender: AnyObject?) {
-        DM_SUUpdater.shared().automaticallyDownloadsUpdates = true // false
+        DM_SUUpdater.shared().automaticallyDownloadsUpdates = false
+        DM_SUUpdater.shared().checkForUpdates(self)
     }
     
     @IBAction func activateApp(_ sender: AnyObject?) {
@@ -79,7 +83,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, DevMateKitDelegate
     
     // --------------------------------------------------------------------------------------------
     // DevMateKitDelegate implementation
-    @objc func trackingReporter(_ reporter: DMTrackingReporter!,
+    @objc func trackingReporter(_ reporter: DMTrackingReporter,
                                 didFinishSendingReportWithSuccess success: Bool) {
         let resultStr = success ? "was successfully sent" : "was failled"
         print("Tracking report \(resultStr).")
@@ -90,20 +94,20 @@ class AppDelegate: NSObject, NSApplicationDelegate, DevMateKitDelegate
         return window
     }
 
-    @objc func activationController(_ controller: DMActivationController!,
+    @objc func activationController(_ controller: DMActivationController,
                                     parentWindowFor mode: DMActivationMode) -> NSWindow? {
         return window
     }
 
-    @objc func activationController(_ controller: DMActivationController!,
-                                    shouldShowDialogFor reason: DMShowDialogReason,
-                                    withAdditionalInfo additionalInfo: [AnyHashable : Any]!,
-                                    proposedActivationMode ioProposedMode: UnsafeMutablePointer<DMActivationMode>!,
-                                    completionHandlerSetter handlerSetter: ((DMCompletionHandler?) -> Void)!) -> Bool {
+    @objc func activationController(_ controller: DMActivationController,
+                                    shouldShowDialogForReason reason: DMShowDialogReason,
+                                    withAdditionalInfo additionalInfo: [AnyHashable : Any],
+                                    proposedActivationMode ioProposedMode: UnsafeMutablePointer<DMActivationMode>,
+                                    completionHandlerSetter handlerSetter: @escaping (DMCompletionHandler) -> Void) -> Bool {
         ioProposedMode.pointee = DMActivationMode.sheet
-        handlerSetter({ result in
-            print("Controller end result: \(result.description)")
-        })
+        handlerSetter() {
+            print("Controller end result: \($0.description)")
+        }
         return true
     }
     

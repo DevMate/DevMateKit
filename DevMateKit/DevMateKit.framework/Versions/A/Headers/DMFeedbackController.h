@@ -5,9 +5,13 @@
 //  Copyright (c) 2014-2018 DevMate Inc. All rights reserved.
 //
 
+#if __has_feature(modules)
+@import Cocoa;
+#else
 #import <Cocoa/Cocoa.h>
-#import <DevMateKit/DMFeedbackReportWindowController.h>
-#import <DevMateKit/DMRatingView.h>
+#endif
+
+#import "DMFeedbackReportWindowController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -66,11 +70,6 @@ typedef NS_ENUM(NSInteger, DMFeedbackTypeTag)
 @property (nonatomic, assign) IBOutlet NSTextField *sendAnonymousExplanationField;
 @property (nonatomic, assign) IBOutlet NSButton *sysInfoButton;
 
-@property (nonatomic, assign) IBOutlet NSTextField *ratingTextField;
-@property (nonatomic, assign) IBOutlet DMRatingView *ratingView;
-
-@property (nonatomic, assign) IBOutlet NSBox *separatorLine;
-
 @property (nonatomic, assign) IBOutlet NSButton *sendButton;
 @property (nonatomic, assign) IBOutlet NSProgressIndicator *progressIndicator;
 
@@ -92,7 +91,7 @@ typedef NS_ENUM(NSInteger, DMFeedbackTypeTag)
     @param mode     Feedback mode.
     @param handler  Completion handler.
  */
-- (void)showFeedbackWindowInMode:(DMFeedbackMode)mode completionHandler:(void (^)(BOOL success))handler;
+- (void)showFeedbackWindowInMode:(DMFeedbackMode)mode completionHandler:(void (^_Nullable)(BOOL success))handler;
 
 @end
 

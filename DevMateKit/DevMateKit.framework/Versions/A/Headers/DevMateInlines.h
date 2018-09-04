@@ -6,11 +6,11 @@
 //
 
 #import <objc/runtime.h>
-#import <DevMateKit/DMFeedbackController.h>
-#import <DevMateKit/DMIssuesController.h>
-#import <DevMateKit/DMTrackingReporter.h>
-#import <DevMateKit/DMActivationController.h>
-#import <DevMateKit/DevMateSparkle.h>
+#import "DMFeedbackController.h"
+#import "DMIssuesController.h"
+#import "DMTrackingReporter.h"
+#import "DMActivationController.h"
+#import "DevMateSparkle.h"
 
 // --------------------------------------------------------------------------
 // Most inline functions here should be used only for DEBUG configuration.

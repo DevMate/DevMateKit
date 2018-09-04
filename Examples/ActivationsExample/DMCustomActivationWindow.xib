@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="DMActivationController">
@@ -16,12 +17,12 @@
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="9c7-eB-WnV">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <rect key="contentRect" x="196" y="240" width="445" height="200"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="QxP-Uh-ly9">
                 <rect key="frame" x="0.0" y="0.0" width="445" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Awn-cr-Cb4">
+                    <imageView horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Awn-cr-Cb4">
                         <rect key="frame" x="0.0" y="0.0" width="445" height="200"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="background" id="WJ9-rW-mno"/>
                     </imageView>
@@ -31,6 +32,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="4Me-nZ-9vM" secondAttribute="trailing" id="6hS-MU-2KO"/>
+                    <constraint firstAttribute="bottom" secondItem="Awn-cr-Cb4" secondAttribute="bottom" id="Bc2-VJ-Rmp"/>
                     <constraint firstItem="4Me-nZ-9vM" firstAttribute="leading" secondItem="QxP-Uh-ly9" secondAttribute="leading" id="FWD-cZ-Asb"/>
                     <constraint firstAttribute="trailing" secondItem="Awn-cr-Cb4" secondAttribute="trailing" id="Gba-D8-dhp"/>
                     <constraint firstItem="Awn-cr-Cb4" firstAttribute="top" secondItem="QxP-Uh-ly9" secondAttribute="top" id="bul-jz-GrZ"/>

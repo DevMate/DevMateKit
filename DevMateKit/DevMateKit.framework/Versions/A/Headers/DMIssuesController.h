@@ -13,7 +13,15 @@
 //  - if you pass -test_exception argument, DMIssuesController instance will throw an exception after delay_seconds (or immediately)
 //  only after controller initialization
 
-#import <DevMateKit/DMIssue.h>
+#if __has_feature(modules)
+@import Foundation;
+#else
+#import <Foundation/Foundation.h>
+#endif
+
+#import "DMIssue.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol DMIssuesControllerDelegate;
 
@@ -21,13 +29,13 @@
 
 + (instancetype)sharedController;
 
-@property (nonatomic, assign) id<DMIssuesControllerDelegate> delegate;
+@property (nonatomic, assign, nullable) id<DMIssuesControllerDelegate> delegate;
 
 //! User name/email to use inside the problem reporter
-@property (nonatomic, retain) NSDictionary *defaultUserInfo; // look for keys below
+@property (nonatomic, retain, nullable) NSDictionary *defaultUserInfo; // look for keys below
 
 //! Array of NSURL instances. Set it in case you have custom log files. By default log is obtained from ASL (default NSLog behaviour) for non-sandboxed apps.
-@property (nonatomic, retain) NSArray *logURLs;
+@property (nonatomic, retain, nullable) NSArray *logURLs;
 
 /*! @brief Starts sending all unhandled issues to server side.
     @param shouldShowReporterDialog Pass \p YES to show report dialog to user, \p NO otherwise. This flag will be ignored if report dialog is already shown.
@@ -43,11 +51,6 @@
 
 @end
 
-@interface DMIssuesController (com_devmate_Deprecated)
-- (BOOL)reportUnhandledProblemsIfExists DM_DEPRECATED("Use -reportUnhandledIssuesIfExists: instead.");
-- (void)enableCrashReporting DM_DEPRECATED("Will be automatically enabled right after initialization.");
-- (void)enableUncaughtExceptionReporting DM_DEPRECATED("Will be automatically enabled right after initialization.");
-@end
 
 @protocol DMIssuesControllerDelegate <NSObject>
 @optional
@@ -80,3 +83,6 @@ FOUNDATION_EXPORT void dm_dispatch_try_block(dispatch_block_t try_block);
 FOUNDATION_EXPORT NSString *const DMIssuesDefaultUserNameKey; // NSString
 FOUNDATION_EXPORT NSString *const DMIssuesDefaultUserEmailKey; // NSString
 FOUNDATION_EXPORT NSString *const DMIssuesDefaultCommentKey; // NSString
+
+NS_ASSUME_NONNULL_END
+
