@@ -11,6 +11,8 @@
 #import <CoreFoundation/CoreFoundation.h>
 #endif
 
+CF_EXTERN_C_BEGIN
+
 typedef CF_ENUM(CFIndex, DMTrialState)
 {
     kDMTrialStateUndefined = 0,
@@ -201,3 +203,5 @@ CF_EXPORT Boolean DMTimeTrialInitializeTrial(CFStringRef timeTrialId,
                                              CFTimeInterval timeInterval,
                                              Boolean shouldContinue,
                                              DMTrialRef *outTrial);
+
+CF_EXTERN_C_END

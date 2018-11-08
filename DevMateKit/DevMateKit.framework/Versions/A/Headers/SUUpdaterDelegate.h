@@ -284,6 +284,14 @@ SU_EXPORT extern NSString *const SUUpdaterAppcastNotificationKey;
  */
 - (void)updater:(SUUpdater *)updater didAbortWithError:(NSError *)error;
 
+/*!
+ Returns whether Sparkle should get info from NSBundle or copy info from disk.
+ 
+ \param updater The SUUpdater instance.
+ \param bundle The NSBundle instance.
+ */
+- (BOOL)updater:(SUUpdater *)updater shouldGetInfoFromBundleItselfForBundle:(NSBundle *)bundle;
+
 @end
 
 // -----------------------------------------------------------------------------

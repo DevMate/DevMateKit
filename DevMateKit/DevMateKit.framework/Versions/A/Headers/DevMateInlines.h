@@ -52,7 +52,7 @@ DM_INLINE void DMKitSetupSandboxLogSystem(void)
     freopen(logFilePathStr, "a+", stderr);
     freopen(logFilePathStr, "a+", stdout);
 
-    printf("\n\n");
+    printf("");
     fflush(stdout);
     NSLog(@"==============================================================");
     NSLog(@"NEW LAUNCH (%@)", [[NSDate date] description]);

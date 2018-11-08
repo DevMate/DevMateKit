@@ -18,15 +18,15 @@
 		</data>
 		<key>Resources/DevMateInfoPopoverView.nib</key>
 		<data>
-		vzvQEwhmkmUf1FjwxCFH+yfrgpw=
+		3J7WoC91xA6YxzaSrGR1ehqW/kY=
 		</data>
 		<key>Resources/DevMateIssuesWindow.nib</key>
 		<data>
-		hdC5mssGT+QvCKAsxwrey9ZJqgo=
+		JhQPxjwQAxXNGwf83t7+Q5LnIds=
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		anwS44Op5Rp3uyOkEBmoP2VJK64=
+		7qXXxQi6Pb4WCs39H11hmjKnx/o=
 		</data>
 		<key>Resources/de.lproj/Reports.strings</key>
 		<dict>
@@ -143,10 +143,65 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			aekSqxMNCVYHk47ZCYE+5mzYy5o=
+			sp3q+kWG9zIqRLNXzaK6RHWIe+c=
 			</data>
 			<key>requirement</key>
 			<string>identifier "coop.plausible.CrashReporter" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2M6BY8QGR8"</string>
+		</dict>
+		<key>Headers/DMIssue.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W7ie8IQJXaOs7tCZAEfFy50C2HM=
+			</data>
+			<key>hash2</key>
+			<data>
+			wuiGC2khdQlCcd/zN/BOxCWMwCRPEIQ9ATSrSWeDOto=
+			</data>
+		</dict>
+		<key>Headers/DMIssueReport.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r2+oh5gROVypqI+eqaUgg9hgob0=
+			</data>
+			<key>hash2</key>
+			<data>
+			lsIY02TLTYSYE8D1tAyyQQQe0Gy1Pw6+w0lP4PZEnfg=
+			</data>
+		</dict>
+		<key>Headers/DMIssuesReporter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tqRpDv5UfmtCDc0vqj7/jR7Jfpo=
+			</data>
+			<key>hash2</key>
+			<data>
+			2ihTA1U9tEmzsZaDrN6iIgHcVtUFaL0xCCqUvv8+VLc=
+			</data>
+		</dict>
+		<key>Headers/DMReport.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pva63kY5ZCK554FkSZgjBbEygRA=
+			</data>
+			<key>hash2</key>
+			<data>
+			rwq+aXlK0nmMAHUzWCEGIic83MXlpgSBTlY1z3DhklI=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZEN4Z0v/gYrByxhVhxKwwQWqWFI=
+			</data>
+			<key>hash2</key>
+			<data>
+			nyiF/dkcshT78UNBvdJLZhGJq264cngouAz8UCaL6Vg=
+			</data>
 		</dict>
 		<key>Resources/DMAttachment.tiff</key>
 		<dict>
@@ -185,33 +240,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vzvQEwhmkmUf1FjwxCFH+yfrgpw=
+			3J7WoC91xA6YxzaSrGR1ehqW/kY=
 			</data>
 			<key>hash2</key>
 			<data>
-			GkJrMN0ocfgP2StdA4LDbJx0cy+ugpcqUWoZm0SFe3c=
+			lMM9jScPE4wvyDVqHhmT7FMSI8CT3AiWocB4exqSuSA=
 			</data>
 		</dict>
 		<key>Resources/DevMateIssuesWindow.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hdC5mssGT+QvCKAsxwrey9ZJqgo=
+			JhQPxjwQAxXNGwf83t7+Q5LnIds=
 			</data>
 			<key>hash2</key>
 			<data>
-			tempTInnoJvboOf5QBbj8pw46AqwhsXDS3ZUvuIRwFY=
+			ijEJJ0wepDLpPW+e1V0m8m9WlXqRIhOTPtlSaB0n7vs=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			anwS44Op5Rp3uyOkEBmoP2VJK64=
+			7qXXxQi6Pb4WCs39H11hmjKnx/o=
 			</data>
 			<key>hash2</key>
 			<data>
-			iVlEZizfFH8B5hWtoU8tJgN3crCiJ/mj1JPoS1/NYTc=
+			UD2P8QypGnuloVoJ+2qjJNAr2LooUZfT7aCHYaPb3XE=
 			</data>
 		</dict>
 		<key>Resources/de.lproj/Reports.strings</key>
@@ -330,11 +385,6 @@
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>Resources/pt.lproj</key>
-		<dict>
-			<key>symlink</key>
-			<string>pt-BR.lproj</string>
 		</dict>
 		<key>Resources/ru.lproj/Reports.strings</key>
 		<dict>
