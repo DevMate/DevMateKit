@@ -10,11 +10,11 @@
 		</data>
 		<key>Resources/Autoupdate.app/Contents/MacOS/Autoupdate</key>
 		<data>
-		YPrnIqRdSM7XGbirL9rO0bKO84M=
+		NlxrMC35TddVE6UWhgJHWzi/N2w=
 		</data>
 		<key>Resources/Autoupdate.app/Contents/MacOS/fileop</key>
 		<data>
-		9xsfytyrDDWn4a8LYeqPtLitLXo=
+		FDzaNeT1+YTSKanLbv6IKO32snM=
 		</data>
 		<key>Resources/Autoupdate.app/Contents/PkgInfo</key>
 		<data>
@@ -300,7 +300,7 @@
 		</dict>
 		<key>Resources/Autoupdate.app/Contents/_CodeSignature/CodeResources</key>
 		<data>
-		2OK2aJE+6/6C5qvlZyINf6gIgC8=
+		GPQ017pxxeXGOefSWMyFuIE8qu0=
 		</data>
 		<key>Resources/DMActivationStepView.nib</key>
 		<data>
@@ -408,7 +408,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		wXqCpap03ZDNg8gzTN84AbUHIZY=
+		nXku4TKZ4JiMaI/U3yI/G5rW5ac=
 		</data>
 		<key>Resources/NOTICE</key>
 		<data>
@@ -420,7 +420,7 @@
 		</data>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/MacOS/Problem Reporter Sandboxed</key>
 		<data>
-		kstsHlUoZZOjs/3YfVm1zLSvJ1Y=
+		aMyFcgRjibJbVo9cTkORyk6Q+sc=
 		</data>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/PkgInfo</key>
 		<data>
@@ -436,7 +436,7 @@
 		</data>
 		<key>Resources/Problem Reporter.app/Contents/MacOS/Problem Reporter</key>
 		<data>
-		0Y8W3BCMQdNasl4aMPNi2bCI7uc=
+		FhiLPtn9zaavDtngEYF7TvNfG+g=
 		</data>
 		<key>Resources/Problem Reporter.app/Contents/PkgInfo</key>
 		<data>
@@ -485,7 +485,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xGDstnT8xRgEScpcB2BrzKmErQE=
+			UAbY81jTToPPA9Xu0DG6qzt1odo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -539,7 +539,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BvhWR+KlZW2hX1KCgqB8OxDvqyM=
+			gG+6dXyje5pIxT+8Nk7Rj7MqxG4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -755,7 +755,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mPDKwcBBk/bv2Y2JCmDm2OjlCi8=
+			oRSuHP1tbw8nCJUSoLLZgcZa7yE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -971,7 +971,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cj91aoLnrBcrRJiqRQMzONUIeKI=
+			1lb+8nlZKiJuAIN+QmQmjVI5jLQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1025,7 +1025,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			13eVDTGZTXlWJuTWZEohK95WcvA=
+			dKex1jNiaZY1t8zfD90L8XDqDbY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1079,7 +1079,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bMlNnui3FPtsMnbTQbEqA4P3cwo=
+			wLTzTkSPGV0asde9TTT+g710Blc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1109,10 +1109,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			uuv7e3fL5LruUvB09RPjAW8k6To=
+			xDdHnhSNYh3nz0NffnNX68/Zdmg=
 			</data>
 			<key>requirement</key>
-			<string>anchor apple generic and identifier "com.devmate.DevMateIssuesReporter" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2M6BY8QGR8")</string>
+			<string>identifier "com.devmate.DevMateIssuesReporter" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2M6BY8QGR8"</string>
 		</dict>
 		<key>Headers/DMActivationController.h</key>
 		<dict>
@@ -1624,22 +1624,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YPrnIqRdSM7XGbirL9rO0bKO84M=
+			NlxrMC35TddVE6UWhgJHWzi/N2w=
 			</data>
 			<key>hash2</key>
 			<data>
-			te5hjvhMFm9+EnMbrcDVB5E5auVyEJDiHFlhsNVa5xA=
+			lDHw7WxgSF6p2xP6FAgX7foOLqzpa0vnhvoUrIVRtdY=
 			</data>
 		</dict>
 		<key>Resources/Autoupdate.app/Contents/MacOS/fileop</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9xsfytyrDDWn4a8LYeqPtLitLXo=
+			FDzaNeT1+YTSKanLbv6IKO32snM=
 			</data>
 			<key>hash2</key>
 			<data>
-			yb5Y9udbRCp/ai8NtrFmcJPD78W32TK2H4nlRILJXrs=
+			X8LxLCM0z+Vn3VhbTV9J2t162hgVk/nbFfGZw+9EszU=
 			</data>
 		</dict>
 		<key>Resources/Autoupdate.app/Contents/PkgInfo</key>
@@ -2069,11 +2069,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2OK2aJE+6/6C5qvlZyINf6gIgC8=
+			GPQ017pxxeXGOefSWMyFuIE8qu0=
 			</data>
 			<key>hash2</key>
 			<data>
-			HBBdopOYG7LkhKMRKXpx1LAbJ5dmwb8BGbvROMmhpK8=
+			n3UzrnofLK6oCTWsnIqH14tx5eE8YTl1V94BNVQNN4k=
 			</data>
 		</dict>
 		<key>Resources/DMActivationStepView.nib</key>
@@ -2366,11 +2366,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wXqCpap03ZDNg8gzTN84AbUHIZY=
+			nXku4TKZ4JiMaI/U3yI/G5rW5ac=
 			</data>
 			<key>hash2</key>
 			<data>
-			48FzKWV+/lHHN89lKGb4fjvofTse3axv+d9FK0XNBgs=
+			z7TARw1KxSgnmP5gGx9C70bUCKOOm7bJvdIt4wnQsG8=
 			</data>
 		</dict>
 		<key>Resources/NOTICE</key>
@@ -2399,11 +2399,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kstsHlUoZZOjs/3YfVm1zLSvJ1Y=
+			aMyFcgRjibJbVo9cTkORyk6Q+sc=
 			</data>
 			<key>hash2</key>
 			<data>
-			GvhZdFY++TDRU16gMphikHLPLRheZdLV51aLgnDEC6k=
+			3kCI9wN85I/uzxd0EVwsIXufspGqggd59KsboieHhwk=
 			</data>
 		</dict>
 		<key>Resources/Problem Reporter Sandboxed.app/Contents/PkgInfo</key>
@@ -2443,11 +2443,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0Y8W3BCMQdNasl4aMPNi2bCI7uc=
+			FhiLPtn9zaavDtngEYF7TvNfG+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			+zjoDudhGGmrblwEV/uhspT8tT7ezbwayTDjGBue/io=
+			Y5K4qItU4VUBt8LZ9S12sBXXwlGYNW8iFEHTPi68TqE=
 			</data>
 		</dict>
 		<key>Resources/Problem Reporter.app/Contents/PkgInfo</key>
@@ -2537,11 +2537,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xGDstnT8xRgEScpcB2BrzKmErQE=
+			UAbY81jTToPPA9Xu0DG6qzt1odo=
 			</data>
 			<key>hash2</key>
 			<data>
-			lAR32L9xHjjzjKYvzwvsGEvmHiROtWo9ODKlrjLSo6w=
+			XZH+3PrcFlYS+u3EWScWaZ0WVkcIpxjyQuFJ78dLazE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2615,11 +2615,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BvhWR+KlZW2hX1KCgqB8OxDvqyM=
+			gG+6dXyje5pIxT+8Nk7Rj7MqxG4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ehYnhBy9ZAOH54W98ozLdUT3095ODRjp8e7ZWcyTs6Q=
+			YwuFvx6CTmlmreN6Q/VGK4KwUhwq4rMXpR1nKGq7NqA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2927,11 +2927,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mPDKwcBBk/bv2Y2JCmDm2OjlCi8=
+			oRSuHP1tbw8nCJUSoLLZgcZa7yE=
 			</data>
 			<key>hash2</key>
 			<data>
-			7nYEbd+Z+SIwtwIJjpBO39RbLJdhgW56WJkd/JmjKKc=
+			MSHTHDXIfOr7SpKsjcU07nsJBSiDQFXCAJuMVHMR8Lk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3244,11 +3244,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cj91aoLnrBcrRJiqRQMzONUIeKI=
+			1lb+8nlZKiJuAIN+QmQmjVI5jLQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			bcuAVYVOwfaqeozDqglG8l9MBr7ut4ZtS78ftnW7oZA=
+			LtsZzPro5IuVCvwPm78XE25nEwtLXefhBNmFpmRFB3w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3322,11 +3322,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			13eVDTGZTXlWJuTWZEohK95WcvA=
+			dKex1jNiaZY1t8zfD90L8XDqDbY=
 			</data>
 			<key>hash2</key>
 			<data>
-			a1O09VtcAK3zjXhRe9XKk4ORcir2pQ0CJNgCP2iZQ9w=
+			KScMbbsKUn56YAY7yvbryBZBrT7Tpr7LaEWXZwXmMgo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3400,11 +3400,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bMlNnui3FPtsMnbTQbEqA4P3cwo=
+			wLTzTkSPGV0asde9TTT+g710Blc=
 			</data>
 			<key>hash2</key>
 			<data>
-			9oEBRWKJf+CdyUftVgIzH+tbtmhbFGkpXu+kkRUUlo4=
+			C2O7dnwkN/uzH5UgLrH41X6LDvuRgIejGdlr2J5c2AI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -3439,10 +3439,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			HTCXBebwfNCzNstp5TYbCGwRtco=
+			nkZOtJJrXrnfRkC5VCGuzAma4ig=
 			</data>
 			<key>requirement</key>
-			<string>anchor apple generic and identifier "com.devmate.UpdateInstaller" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2M6BY8QGR8")</string>
+			<string>identifier "com.devmate.UpdateInstaller" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2M6BY8QGR8"</string>
 		</dict>
 	</dict>
 	<key>rules</key>

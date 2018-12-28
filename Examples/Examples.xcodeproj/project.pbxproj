@@ -982,7 +982,7 @@
 			attributes = {
 				CLASSPREFIX = DM;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "DevMate Inc.";
 				TargetAttributes = {
 					335F092E1A14F3E5001BCB49 = {
@@ -1693,7 +1693,6 @@
 			buildSettings = {
 				PRODUCT_BUNDLE_IDENTIFIER = com.devmate.Bathyscaphe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1703,7 +1702,6 @@
 			buildSettings = {
 				PRODUCT_BUNDLE_IDENTIFIER = com.devmate.Bathyscaphe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

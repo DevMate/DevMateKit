@@ -166,7 +166,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/pt_BR.lproj/Sparkle.strings</key>
+		<key>Resources/pt-BR.lproj/Sparkle.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -256,7 +256,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/zh_CN.lproj/Sparkle.strings</key>
+		<key>Resources/zh-Hans.lproj/Sparkle.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -265,7 +265,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/zh_TW.lproj/Sparkle.strings</key>
+		<key>Resources/zh-Hant-TW.lproj/Sparkle.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -511,7 +511,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/pt_BR.lproj/Sparkle.strings</key>
+		<key>Resources/pt-BR.lproj/Sparkle.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -641,7 +641,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/zh_CN.lproj/Sparkle.strings</key>
+		<key>Resources/zh-Hans.lproj/Sparkle.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -654,7 +654,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/zh_TW.lproj/Sparkle.strings</key>
+		<key>Resources/zh-Hant-TW.lproj/Sparkle.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>

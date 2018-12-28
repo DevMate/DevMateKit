@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.9.2</string>
+	<string>1.9.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,11 +25,11 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.9.2</string>
+	<string>1.9.3</string>
 	<key>DMBuildNum</key>
-	<integer>52</integer>
+	<integer>58</integer>
 	<key>DMBuildRev</key>
-	<string>622408d</string>
+	<string>45cfa4f</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>

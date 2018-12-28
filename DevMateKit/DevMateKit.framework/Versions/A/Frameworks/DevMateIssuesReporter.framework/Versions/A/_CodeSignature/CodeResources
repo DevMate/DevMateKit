@@ -143,65 +143,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			sp3q+kWG9zIqRLNXzaK6RHWIe+c=
+			TQnbjzQJ1bfBJQ9pqzLgPvQ4Yes=
 			</data>
 			<key>requirement</key>
 			<string>identifier "coop.plausible.CrashReporter" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2M6BY8QGR8"</string>
-		</dict>
-		<key>Headers/DMIssue.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W7ie8IQJXaOs7tCZAEfFy50C2HM=
-			</data>
-			<key>hash2</key>
-			<data>
-			wuiGC2khdQlCcd/zN/BOxCWMwCRPEIQ9ATSrSWeDOto=
-			</data>
-		</dict>
-		<key>Headers/DMIssueReport.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			r2+oh5gROVypqI+eqaUgg9hgob0=
-			</data>
-			<key>hash2</key>
-			<data>
-			lsIY02TLTYSYE8D1tAyyQQQe0Gy1Pw6+w0lP4PZEnfg=
-			</data>
-		</dict>
-		<key>Headers/DMIssuesReporter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tqRpDv5UfmtCDc0vqj7/jR7Jfpo=
-			</data>
-			<key>hash2</key>
-			<data>
-			2ihTA1U9tEmzsZaDrN6iIgHcVtUFaL0xCCqUvv8+VLc=
-			</data>
-		</dict>
-		<key>Headers/DMReport.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pva63kY5ZCK554FkSZgjBbEygRA=
-			</data>
-			<key>hash2</key>
-			<data>
-			rwq+aXlK0nmMAHUzWCEGIic83MXlpgSBTlY1z3DhklI=
-			</data>
-		</dict>
-		<key>Modules/module.modulemap</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZEN4Z0v/gYrByxhVhxKwwQWqWFI=
-			</data>
-			<key>hash2</key>
-			<data>
-			nyiF/dkcshT78UNBvdJLZhGJq264cngouAz8UCaL6Vg=
-			</data>
 		</dict>
 		<key>Resources/DMAttachment.tiff</key>
 		<dict>
@@ -385,6 +330,11 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>Resources/pt.lproj</key>
+		<dict>
+			<key>symlink</key>
+			<string>pt-BR.lproj</string>
 		</dict>
 		<key>Resources/ru.lproj/Reports.strings</key>
 		<dict>
