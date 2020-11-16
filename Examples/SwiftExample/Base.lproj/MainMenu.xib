@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -666,38 +667,19 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="-101" y="271"/>
         </menu>
         <window title="SwiftExample" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hu0-f9-WNX">
-                        <rect key="frame" x="14" y="312" width="193" height="32"/>
-                        <buttonCell key="cell" type="push" title="Show Feedback Window" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xhw-rc-e6Z">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="openFeedbackWindow:" target="Voe-Tx-rLC" id="m5f-Va-AgP"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2U-af-1pJ">
-                        <rect key="frame" x="14" y="279" width="124" height="32"/>
-                        <buttonCell key="cell" type="push" title="Try Exception" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IF6-2k-w6V">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="tryException:" target="Voe-Tx-rLC" id="UzQ-du-nEV"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1WP-Zs-Oem">
-                        <rect key="frame" x="14" y="246" width="156" height="32"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1WP-Zs-Oem">
+                        <rect key="frame" x="13" y="313" width="148" height="32"/>
                         <buttonCell key="cell" type="push" title="Check for Updates" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Bqf-j8-dDC">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -706,8 +688,8 @@
                             <action selector="checkForUpdates:" target="Voe-Tx-rLC" id="j6i-1L-Vob"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-8y-Mtd">
-                        <rect key="frame" x="14" y="213" width="119" height="32"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-8y-Mtd">
+                        <rect key="frame" x="13" y="280" width="112" height="32"/>
                         <buttonCell key="cell" type="push" title="Activate App" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6gx-dp-bjM">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -717,7 +699,16 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="bkd-8y-Mtd" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="1Tq-hL-eeZ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bkd-8y-Mtd" secondAttribute="trailing" constant="20" symbolic="YES" id="LmO-f6-Klq"/>
+                    <constraint firstItem="bkd-8y-Mtd" firstAttribute="top" secondItem="1WP-Zs-Oem" secondAttribute="bottom" constant="13" id="QvQ-Fg-pQx"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1WP-Zs-Oem" secondAttribute="trailing" constant="20" symbolic="YES" id="kPe-Vc-P5K"/>
+                    <constraint firstItem="1WP-Zs-Oem" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="kxf-E6-kzm"/>
+                    <constraint firstItem="1WP-Zs-Oem" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="tAg-F1-P8e"/>
+                </constraints>
             </view>
+            <point key="canvasLocation" x="-101" y="110"/>
         </window>
     </objects>
 </document>

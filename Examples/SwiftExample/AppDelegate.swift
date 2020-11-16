@@ -16,12 +16,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, DevMateKitDelegate
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Send launch report
-        DevMateKit.sendTrackingReport(nil, delegate: self)
-        
-        // Setup crash/exception reporter
-        DevMateKit.setupIssuesController(self, reportingUnhandledIssues: true)
-        
         // Setup trial
         var error = DMKevlarError.testError
         if !_my_secret_activation_check!(&error).boolValue || DMKevlarError.noError != error {
@@ -32,15 +26,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, DevMateKitDelegate
         DMActivationController.setDelegate(self)
     }
 
-    @IBAction func openFeedbackWindow(_ sender: AnyObject?) {
-        DevMateKit.showFeedbackDialog(self, in: DMFeedbackMode.sheetMode)
-    }
-    
-    @IBAction func tryException(_ sender: AnyObject?) {
-        print("Will throw exception now...")
-        print("\(NSArray().object(at: 23))")
-    }
-    
     @IBAction func checkForUpdates(_ sender: AnyObject?) {
         DM_SUUpdater.shared().automaticallyDownloadsUpdates = false
         DM_SUUpdater.shared().checkForUpdates(self)
@@ -83,17 +68,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, DevMateKitDelegate
     
     // --------------------------------------------------------------------------------------------
     // DevMateKitDelegate implementation
-    @objc func trackingReporter(_ reporter: DMTrackingReporter,
-                                didFinishSendingReportWithSuccess success: Bool) {
-        let resultStr = success ? "was successfully sent" : "was failled"
-        print("Tracking report \(resultStr).")
-    }
-    
-    @objc func feedbackController(_ controller: DMFeedbackController,
-                                  parentWindowFor mode: DMFeedbackMode) -> NSWindow {
-        return window
-    }
-
     @objc func activationController(_ controller: DMActivationController,
                                     parentWindowFor mode: DMActivationMode) -> NSWindow? {
         return window

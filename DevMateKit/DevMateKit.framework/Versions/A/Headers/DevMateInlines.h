@@ -2,13 +2,10 @@
 //  DevMateInlines.h
 //  DevMateKit
 //
-//  Copyright (c) 2014-2018 DevMate Inc. All rights reserved.
+//  Copyright (c) 2014-2020 DevMate Inc. All rights reserved.
 //
 
 #import <objc/runtime.h>
-#import "DMFeedbackController.h"
-#import "DMIssuesController.h"
-#import "DMTrackingReporter.h"
 #import "DMActivationController.h"
 #import "DevMateSparkle.h"
 
@@ -25,6 +22,10 @@
 #   pragma clang diagnostic pop
 #else // -fobjc-arc
 #   define DM_AUTORELEASE(v) (v)
+#endif
+
+#ifndef DM_INLINE
+#   define DM_INLINE static __inline__ __attribute__((always_inline))
 #endif
 
 DM_INLINE void DMKitSetupSandboxLogSystem(void)
@@ -56,29 +57,22 @@ DM_INLINE void DMKitSetupSandboxLogSystem(void)
     fflush(stdout);
     NSLog(@"==============================================================");
     NSLog(@"NEW LAUNCH (%@)", [[NSDate date] description]);
-
-    NSArray *allLogFiles = [NSArray arrayWithObject:[NSURL fileURLWithPath:logFilePath]];
-    [DMFeedbackController sharedController].logURLs = allLogFiles;
-    [DMIssuesController sharedController].logURLs = allLogFiles;
 }
 
 #pragma mark - DevMate Debug Menu
 
-@protocol DevMateKitDelegate <  DMTrackingReporterDelegate,
-                                DMFeedbackControllerDelegate,
+@protocol DevMateKitDelegate <
                                 DMActivationControllerDelegate,
 #ifndef USED_CUSTOM_SPARKLE_FRAMEWORK
                                 SUUpdaterDelegate,
 #endif // USED_CUSTOM_SPARKLE_FRAMEWORK
-                                DMIssuesControllerDelegate >
+                                NSObject >
 @end
 
 #ifndef DEBUG
 
 #define DMKitDebugGetDevMateMenu() (nil)
 #define DMKitDebugGetDevMateMenuItem(a,b,c) (nil)
-#define DMKitDebugAddFeedbackMenu()
-#define DMKitDebugAddIssuesMenu()
 #define DMKitDebugAddActivationMenu()
 #define DMKitDebugAddTrialMenu()
 #define DMKitDebugAddUpdateMenu()
@@ -87,9 +81,6 @@ DM_INLINE void DMKitSetupSandboxLogSystem(void)
 #else // defined(DEBUG)
 
 @interface NSApplication (com_devmate_DebugExtensions)
-- (IBAction)com_devmate_ShowFeedback:(id)sender;
-- (IBAction)com_devmate_ThrowException:(id)sender;
-- (IBAction)com_devmate_CrashApp:(id)sender;
 - (IBAction)com_devmate_StartActivation:(id)sender;
 - (IBAction)com_devmate_InvalidateActivation:(id)sender;
 - (IBAction)com_devmate_InvalidateTrial:(id)sender;
@@ -124,40 +115,6 @@ DM_INLINE NSMenuItem *DMKitDebugGetDevMateMenuItem(NSString *title, SEL appActio
     class_addMethod([NSApplication class], appAction, imp_implementationWithBlock(impBlock), types);
 
     return menuItem;
-}
-
-DM_INLINE void DMKitDebugAddFeedbackMenu(void)
-{
-    static NSString *menuItemTitle = @"Show Feedback Dialog";
-    
-    NSMenu *debugMenu = DMKitDebugGetDevMateMenu();
-    if (nil == [debugMenu itemWithTitle:menuItemTitle])
-    {
-        NSMenuItem *feedbackMenuItem = DMKitDebugGetDevMateMenuItem(menuItemTitle, @selector(com_devmate_ShowFeedback:), ^(id self, id sender) {
-            [[DMFeedbackController sharedController] showWindow:nil];
-        });
-        [debugMenu addItem:feedbackMenuItem];
-    }
-}
-
-DM_INLINE void DMKitDebugAddIssuesMenu(void)
-{
-    static NSString *exceptionMenuTitle = @"Throw Test Exception";
-    static NSString *crashMenuTitle = @"Crash Application";
-    
-    NSMenu *debugMenu = DMKitDebugGetDevMateMenu();
-    if (nil == [debugMenu itemWithTitle:exceptionMenuTitle])
-    {
-        NSMenuItem *exceptionMenuItem = DMKitDebugGetDevMateMenuItem(exceptionMenuTitle, @selector(com_devmate_ThrowException:), ^(id self, id sender) {
-            [NSException raise:@"Test exception" format:@"This exception was thrown to test DevMate issues feature."];
-        });
-        [debugMenu addItem:exceptionMenuItem];
-        
-        NSMenuItem *crashMenuItem = DMKitDebugGetDevMateMenuItem(crashMenuTitle, @selector(com_devmate_CrashApp:), ^(id self, id sender) {
-            *(int *)1 = 0;
-        });
-        [debugMenu addItem:crashMenuItem];
-    }
 }
 
 DM_INLINE void DMKitDebugAddActivationMenu(void)
@@ -276,8 +233,6 @@ DM_INLINE void DMKitDebugAddUpdateMenu(void)
 
 DM_INLINE void DMKitDebugAddDevMateMenu(void)
 {
-    DMKitDebugAddFeedbackMenu();
-    DMKitDebugAddIssuesMenu();
     DMKitDebugAddActivationMenu();
     DMKitDebugAddTrialMenu();
     DMKitDebugAddUpdateMenu();

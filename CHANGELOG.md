@@ -1,3 +1,36 @@
+# Version 1.10
+**Nov 16, 2020**
+* Added `arm64` architecture for Apple Silicon
+* Removed features that were sunsetted
+	* Tracking 
+	* Issues reporter
+	* Feedback reporter
+* Removed MAS framework version because of previous point
+
+# Version 1.9.3
+**Dec 28, 2018**
+* Fixed [issue #46](https://github.com/DevMate/DevMateKit/issues/46)
+
+# Version 1.9.2
+**Nov 8, 2018**
+* Fixed linker error for ObjC++ projects
+* Now the framework is built with Hardened Runtime enabled
+* Fixed showing the issues dialog on every launch in case the app is missing access rights
+* Other minor improvements
+
+# Version 1.9.1
+**Sep 13, 2018**
+* Fixed the `Problem Reporter Sandboxed.app` resource entitlements for correct uploading to the Mac App Store
+
+# Version 1.9
+**Sep 4, 2018**
+* Added support for macOS 10.14 Mojave Dark Mode
+* Removed obsolete API that was marked as deprecated
+
+# Version 1.8.3
+**Aug 16, 2018**
+* Fixed hang that occurred if activation dialog got shown on start
+
 # Version 1.8.2
 **Apr 6, 2018**
 * Fixed potential runtime exceptions when changing UI in background thread in activation dialog

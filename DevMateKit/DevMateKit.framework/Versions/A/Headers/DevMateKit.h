@@ -2,7 +2,7 @@
 //  DevMateKit.h
 //  DevMateKit
 //
-//  Copyright (c) 2014-2018 DevMate Inc. All rights reserved.
+//  Copyright (c) 2014-2020 DevMate Inc. All rights reserved.
 //
 
 #if __has_feature(modules)
@@ -11,9 +11,6 @@
 #import <Cocoa/Cocoa.h>
 #endif
 
-#import "DevMateTracking.h"
-#import "DevMateIssues.h"
-#import "DevMateFeedback.h"
 #import "DevMateActivations.h"
 
 // If you are using your own copy of Sparkle.framework just define
@@ -37,34 +34,39 @@ NS_ASSUME_NONNULL_BEGIN
     @param userEmail User email.
 */
 + (void)setupDefaultUserName:(NSString *_Nullable)userName
-                   userEmail:(NSString *_Nullable)userEmail;
+                   userEmail:(NSString *_Nullable)userEmail
+    DEPRECATED_MSG_ATTRIBUTE("Feedback and Issues are not supported anymore. This method does nothing");
 
 /*! @brief Setup custom log files for sending them with user feedback or issue reporter.
     @discussion This value will be set up only for Feedback and Issue shared controllers.
     @param logFileURLs array with NSURL objects.
  */
-+ (void)setupCustomLogFileURLs:(NSArray *_Nullable)logFileURLs;
++ (void)setupCustomLogFileURLs:(NSArray *_Nullable)logFileURLs
+    DEPRECATED_MSG_ATTRIBUTE("Feedback and Issues are not supported anymore. This method does nothing");
 
 /*! @brief Easy way to send tracking report.
     @param infoProvider Info provider for tracking reporter.
     @param delegate delegate for tracking reporter
 */
-+ (void)sendTrackingReport:(id<DMTrackingReporterInfoProvider> _Nullable)infoProvider
-                  delegate:(id<DMTrackingReporterDelegate> _Nullable)delegate;
++ (void)sendTrackingReport:(id _Nullable)infoProvider
+                  delegate:(id _Nullable)delegate
+    DEPRECATED_MSG_ATTRIBUTE("Tracking is not supported anymore. This method does nothing");
 
 /*! @brief Easy way to open standard feedback dialog.
     @param delegate delegate for feedback controller.
     @param mode show window mode for feedback dialog.
 */
-+ (void)showFeedbackDialog:(id<DMFeedbackControllerDelegate> _Nullable)delegate
-                    inMode:(DMFeedbackMode)mode;
++ (void)showFeedbackDialog:(id _Nullable)delegate
+                    inMode:(NSInteger)mode
+    DEPRECATED_MSG_ATTRIBUTE("Feedback is not supported anymore. This method does nothing");
 
 /*! @brief Easy way to setup all necessary to handle exception and crash issues.
     @param delegate delegate for issues controller.
     @param shouldReport pass \p YES to open standard issues dialog for unhadled issue reports if such exists.
 */
-+ (void)setupIssuesController:(id<DMIssuesControllerDelegate> _Nullable)delegate
-     reportingUnhandledIssues:(BOOL)shouldReport;
++ (void)setupIssuesController:(id _Nullable)delegate
+     reportingUnhandledIssues:(BOOL)shouldReport
+    DEPRECATED_MSG_ATTRIBUTE("Issues are not supported anymore. This method does nothing");
 
 /*! @brief Easy way to initialize time trial.
     @param delegate delegate for standard trial controller.
